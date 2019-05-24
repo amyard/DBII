@@ -1,8 +1,8 @@
 /*  HEADER  */
 
-.navbar { background: #343A40; }
+.navbar { background: #9FCDFF; }
 
-.navbar .navbar-brand { color: white; }
+.navbar .navbar-brand { color: #343A40; }
 
 .navbar .navbar-brand:hover {
     color: white;
@@ -72,4 +72,11 @@
 .btn-login-after-conf:hover {
     cursor: pointer;
     font-size: 1.2em;
+}
+
+
+/*   RESET PASSWORD   */
+.reg-form p #id_email {
+    width: 92%;
+    margin-left: 2%;
 }
