@@ -2,14 +2,13 @@
 1.  ~~Задание 1-3~~
 2.  ~~Создать проект.~~
 3.  ~~Пользователи: AbstractUser и вся модель.~~
-4.  Пользователи: logout.
+4.  ~~Пользователи: logout.~~
 5.  Пользователи: login - with email.
 6.  Пользователи: reg - via email confiramtion.
 7.  Пользователи: reset password.
-8.  Пользователи: Profile view + template.
+8.  Пользователи: Profile view + template: сайдбар и контент.
 9.  Пользователи: update view.
 10. Пользователи: после активате - либо на listview, либо update user info
-
 11. Frond-End: main posts and sidebar.
 12. App Post: redirect with to ligin if anonymous
 13. App Post: model and listview
@@ -24,12 +23,14 @@
 22. App Post: фильтрация - по комментам/по лайкам
 23. App Post: sidebar - через templatetag: самые обсуждаемые статтьи/ самые трендовые/ если в detailview то рандомно другие статтьи от этого автора
 24. App Post: search view
-25. Populate data 
-26. Тестирвоние
-27. Проработка недочетов 
+25. Пользователи: сайдбар - все статтьи пользователя.
+26. Populate data 
+27. Тестирвоние
+28. Проработка недочетов 
     - Папку медиа не нужно хранить в репозитории
     - В settings.py в открытом доступе лежат креденшиалсы
-28. Heroku
+29. Heroku
+30. READ ME - detail with all tasks and some description
 
 ### Aditional TODO
 1.  Login via Social Network
