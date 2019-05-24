@@ -31,10 +31,7 @@
               <button class="login-btn btn btn-light mr-3" type="button" name="button">
                   <i class="fas fa-sign-in-alt fa-lg mr-1 icons-color" title="Log In"></i>Sign In
               </button>
-
-              <button class="signup-btn btn btn-light" type="button" name="button">
-                  <i class="fas fa-user-plus fa-lg mr-1 icons-color" title="Registration"></i>Sign Up
-              </button>
+              <a href="{% url 'users:signup' %}" class="ml-3 icons-a"><i class="fas fa-user-plus fa-lg mr-1 icons-color" title="Log Out"></i>Sign Up</a>
           {% endif %}
       </div>
     </nav>
@@ -76,7 +73,6 @@
 $(function () {
 
     $(".login-btn").modalForm({formURL: "{% url 'users:signin' %}"});
-    $(".signup-btn").modalForm({formURL: "{% url 'users:signup' %}"});
 
     // Hide message
     $(".alert").fadeTo(4000, 500).slideUp(500, function(){

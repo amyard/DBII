@@ -13,7 +13,7 @@
 .icons-a {
     color: #343A40;
     background-color: white;
-    padding: 5px 15px;
+    padding: 10px 15px;
     border-radius: 5px;
 }
 .icons-a:hover {
@@ -23,7 +23,7 @@
     box-shadow: 0px 0px 7px white;
 }
 
-.login-btn:hover, .signup-btn:hover {
+.login-btn:hover {
     color: white;
     background-color: #343A40;
     box-shadow: 0px 0px 7px white;
@@ -44,3 +44,23 @@
     width: 20%;
     margin-left: 1%;
 }
+
+
+/*  SIGN UP  */
+
+.log-reg {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.reg-form {
+    border: 1px solid blue;
+    width: 60%;
+    margin-left: 20%;
+    padding: 10px 25px;
+    border: 1px solid #343A40;
+    box-shadow: 0px 0px 7px grey;
+}
+
+.help-inline { color: #c82333; }
