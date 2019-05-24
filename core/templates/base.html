@@ -26,6 +26,10 @@
 
       <div class="d-inline">
           {% if request.user.is_authenticated %}
+              <a href="{% url 'users:user_detail' profile.pk profile.username %}" class="profile-name">
+                  <img src="{{ profile.image.url }}" class="rounded-circle profile-img">
+                  Hi, {{ profile.username }}
+              </a>
               <a href="{% url 'users:logout' %}" class="ml-3 icons-a py-2"><i class="fas fa-sign-out-alt fa-lg mr-1 icons-color" title="Log Out"></i>Log Out</a>
           {% else %}
               <button class="login-btn btn btn-light mr-3" type="button" name="button">

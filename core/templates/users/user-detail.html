@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ profile.username }} - {{ block.super }}
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="mt-5">
+
+    <div class="content-profile py-2 px-2">
+        <div class="media">
+          <img src="{{ profile.image.url }}" class="mr-3" alt="...">
+          <div class="media-body">
+            <h3 class="mt-0">Personal Data:</h3>
+            <hr>
+            <b>Username:</b> {{ profile.username }}<br>
+            <b>City:</b> {{ profile.city }}<br>
+            <b>Country:</b> {{ profile.country }}<br>
+            <b>Birthday:</b> {{ profile.birthday }}<br>
+
+            <!--  TODO - Fill values -->
+            <b>Created Posts:</b> 11<br>
+            <b>Left Comments:</b> 22<br>
+            <hr>
+            <button class="btn btn-outline-primary" name="button">
+                Update Detail Info
+            </button>
+            <button class="btn btn-outline-danger ml-2" name="button">
+                Delete User Account
+            </button>
+
+          </div>
+        </div>
+    </div>
+
+    <div class="sidebar-profile">
+        <!--  TODO - Fill values -->
+        Latest posts added by <b>{{ profile.username }}</b>:
+    </div>
+
+</div>
+
+{% endblock %}

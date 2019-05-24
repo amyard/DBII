@@ -6,8 +6,8 @@
 5.  ~~Пользователи: login - with email.~~
 6.  ~~Пользователи: reg - via email confiramtion.~~
 7.  ~~Пользователи: reset password.~~
-8.  Пользователи: Profile view + template: сайдбар и контент.
-9.  Пользователи: update view.
+8.  ~~Пользователи: Profile view + template: сайдбар и контент.~~
+9.  Пользователи: update view / delete account.
 10. Пользователи: после активате - либо на listview, либо update user info
 11. Frond-End: main posts and sidebar.
 12. App Post: redirect with to ligin if anonymous

@@ -8,7 +8,7 @@ from django.urls import reverse_lazy
 from django.template.loader import render_to_string
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes, force_text
-from django.views.generic import CreateView, View
+from django.views.generic import CreateView, View, DetailView
 
 from .forms import CustomAuthenticationForm, CustomUserCreationForm
 from .tokens import account_activation_token
@@ -81,3 +81,10 @@ class ActivateView(View):
             return render(request, 'users/confirm_email/confirm_email_valid.html', {})
         else:
             return render(request, 'users/confirm_email/confirm_email_invalid.html', {})
+
+
+
+class ProfileDetailView(DetailView):
+    model = User
+    context_object_name = 'profile'
+    template_name = 'users/user-detail.html'

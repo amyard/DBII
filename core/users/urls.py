@@ -1,5 +1,5 @@
 from django.urls import path, reverse_lazy
-from .views import CustomLogoutView, CustomLoginView, ActivateView, SignUpView
+from .views import CustomLogoutView, CustomLoginView, ActivateView, SignUpView, ProfileDetailView
 
 from django.contrib.auth import views as auth_views
 
@@ -11,6 +11,8 @@ urlpatterns = [
 
     path('signup/', SignUpView.as_view(), name='signup'),
     path('activate/<uidb64>/<token>/', ActivateView.as_view(), name='activate'),
+
+    path('user-detail/<int:pk>-<str:username>', ProfileDetailView.as_view(), name='user_detail'),
 
     # RESET PASSWORD
     path('password-reset/', auth_views.PasswordResetView.as_view(template_name='users/reset_password/password_reset.html',
