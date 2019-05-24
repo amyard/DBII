@@ -12,7 +12,9 @@ class UserAdmin(BaseUserAdmin):
 
 	fieldsets = (
 			(None, {'fields': ('username','email','password')}),
-			('Permissions', {'fields': ('is_admin','is_active')})
+			('Permissions', {'fields': ('is_admin','is_active')}),
+			('Personal Data', {'fields': ('city','country', 'birthday')}),
+			(None, {'fields': ('image',)}),
 		)
 	search_fields = ('username','email')
 	ordering = ('username','email')
