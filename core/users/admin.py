@@ -7,7 +7,7 @@ from core.users.models import User
 
 @admin.register(User)
 class UserAdmin(BaseUserAdmin):
-	list_display = ('username','email','is_admin')
+	list_display = ('username','email','is_admin', 'is_active')
 	list_filter = ('is_admin','is_active')
 
 	fieldsets = (

@@ -33,7 +33,7 @@
               </button>
 
               <button class="signup-btn btn btn-light" type="button" name="button">
-                  <i class="fas fa-user-plus fa-lg mr-1 icons-color" title="Registration"></i>Registration
+                  <i class="fas fa-user-plus fa-lg mr-1 icons-color" title="Registration"></i>Sign Up
               </button>
           {% endif %}
       </div>
@@ -76,6 +76,7 @@
 $(function () {
 
     $(".login-btn").modalForm({formURL: "{% url 'users:signin' %}"});
+    $(".signup-btn").modalForm({formURL: "{% url 'users:signup' %}"});
 
     // Hide message
     $(".alert").fadeTo(4000, 500).slideUp(500, function(){
