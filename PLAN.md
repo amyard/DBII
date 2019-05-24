@@ -1,7 +1,7 @@
 ### General TODO
 1.  ~~Задание 1-3~~
-2.  Создать проект.
-3.  Пользователи: AbstractUser и вся модель.
+2.  ~~Создать проект.~~
+3.  ~~Пользователи: AbstractUser и вся модель.~~
 4.  Пользователи: logout.
 5.  Пользователи: login - with email.
 6.  Пользователи: reg - via email confiramtion.
@@ -29,6 +29,7 @@
 27. Проработка недочетов 
     - Папку медиа не нужно хранить в репозитории
     - В settings.py в открытом доступе лежат креденшиалсы
+28. Heroku
 
 ### Aditional TODO
 1.  Login via Social Network

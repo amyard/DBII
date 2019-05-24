@@ -1,0 +1,75 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+    <title>
+        {% block title %}DB2 TestCase{% endblock %}
+    </title>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+      <a class="navbar-brand" href="/">DB2 TESTTASK</a>
+
+      <div class="d-inline">
+          {% if request.user.is_authenticated %}
+              <a href="" class="ml-3 icons-a"><i class="fas fa-sign-out-alt fa-lg mr-1 icons-color" title="Log Out"></i>Log Out</a>
+          {% else %}
+              <button class="login-btn btn btn-light mr-3" type="button" name="button">
+                  <i class="fas fa-sign-in-alt fa-lg mr-1 icons-color" title="Log In"></i>Sign In
+              </button>
+
+              <button class="signup-btn btn btn-light" type="button" name="button">
+                  <i class="fas fa-user-plus fa-lg mr-1 icons-color" title="Registration"></i>Registration
+              </button>
+          {% endif %}
+      </div>
+    </nav>
+
+
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content"></div>
+        </div>
+    </div>
+
+
+
+    {% if messages %}
+        {% for message in messages %}
+            <div class = 'alert alert-{{ message.tags }}'>
+                <b>{{ message }}</b>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+
+{% block content %}
+{% endblock %}
+
+
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.bootstrap.modal.forms.js' %}"></script>
+
+
+
+
+</body>
+</html>

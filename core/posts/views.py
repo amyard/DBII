@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+
+def hello(request):
+    return render(request, template_name='posts/main.html', context={'test':'AWESOME, ALL FINE.'})
