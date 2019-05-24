@@ -5,7 +5,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import PermissionsMixin
 
 import datetime
-
+from PIL import Image
 
 
 USERNAME_REGEX = '^[a-zA-Z0-9.+-]*$'
@@ -78,3 +78,13 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def has_module_perms(self, app_label):
         return True
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+
+        # resize of image
+        img = Image.open(self.image.path)
+        if img.height > 300 or img.width > 300:
+            output_size = (300, 300)
+            img.thumbnail(output_size)
+            img.save(self.image.path)
