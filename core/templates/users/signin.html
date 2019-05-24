@@ -1,0 +1,45 @@
+{% load widget_tweaks %}
+
+<form method="post" action="">
+  {% csrf_token %}
+
+  <div class="modal-header">
+    <h3 class="modal-title">Sign In:</h3>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="modal-body">
+
+    <div class="{% if form.non_field_errors %}invalid{% endif %} mb-2">
+      {% for error in form.non_field_errors %}
+        <div class="alert alert-danger mt-2">
+            <strong>{{ error|escape }}</strong>
+        </div>
+      {% endfor %}
+    </div>
+
+    {% for field in form %}
+      <div class="form-group">
+        <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+        {% render_field field class="form-control" placeholder=field.label %}
+        <div class="{% if field.errors %} invalid{% endif %}">
+          {% for error in field.errors %}
+            <p class="help-block">
+                <div class="alert alert-danger mt-2">
+                    <strong>{{ error }}</strong>
+                </div>
+            </p>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="submit-btn btn btn-primary" formnovalidate="formnovalidate">Log In</button>
+    <a href="{% url 'core:base_view' %}" id="cancel" name="cancel" class="btn btn-danger mt-3 mb-3">Cancel</a>
+  </div>
+
+</form>

@@ -8,7 +8,7 @@ USERNAME_REGEX = '^[a-zA-Z0-9.+-]*$'
 class UserManager(BaseUserManager):
     def create_user(self, username, email, password=None):
         if not email:
-            raise ValueError('Пользователь должен указать адрес электронной почты')
+            raise ValueError('User must specify an email address')
 
         user = self.model(username = username, email = self.normalize_email(email))
         user.set_password(password)
@@ -39,8 +39,8 @@ class User(AbstractBaseUser):
 
     objects = UserManager()
 
-    USERNAME_FIELD = 'username'
-    REQUIRED_FIELDS = ['email']
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = []
 
     def __str__(self):
         return self.email

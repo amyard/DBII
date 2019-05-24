@@ -151,6 +151,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 CRISPY_TEMPLATES_PACK = 'bootstrap4'
 
 
-# LOGIN_REDIRECT_URL = 'core:base-view'
-# LOGOUT_REDIRECT_URL = 'core:base-view'
-# LOGIN_URL = 'users:login'
+LOGIN_REDIRECT_URL = 'core:base_view'
+LOGOUT_REDIRECT_URL = 'core:base_view'
+LOGIN_URL = 'users:signin'

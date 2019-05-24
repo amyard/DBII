@@ -69,6 +69,24 @@
 <script src="{% static 'js/jquery.bootstrap.modal.forms.js' %}"></script>
 
 
+{% block js %}
+
+<script>
+<!-- HIDE MESSAGES -->
+$(function () {
+
+    $(".login-btn").modalForm({formURL: "{% url 'users:signin' %}"});
+
+    // Hide message
+    $(".alert").fadeTo(4000, 500).slideUp(500, function(){
+        $(".alert").slideUp(500);
+    });
+
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+{% endblock %}
 
 
 </body>

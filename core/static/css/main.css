@@ -22,3 +22,9 @@
     background-color: #343A40;
     box-shadow: 0px 0px 7px white;
 }
+
+.login-btn:hover, .signup-btn:hover {
+    color: white;
+    background-color: #343A40;
+    box-shadow: 0px 0px 7px white;
+}
