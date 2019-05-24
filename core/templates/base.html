@@ -73,6 +73,7 @@
 $(function () {
 
     $(".login-btn").modalForm({formURL: "{% url 'users:signin' %}"});
+    $(".btn-login-after-conf").modalForm({formURL: "{% url 'users:signin' %}"});
 
     // Hide message
     $(".alert").fadeTo(4000, 500).slideUp(500, function(){
