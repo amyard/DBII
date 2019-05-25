@@ -25,10 +25,10 @@
             <b>Created Posts:</b> 11<br>
             <b>Left Comments:</b> 22<br>
             <hr>
-            <button class="btn btn-outline-primary" name="button">
+            <button class="user-update btn btn-outline-primary" name="button" data-id="{% url 'users:user_update' profile.pk %}">
                 Update Detail Info
             </button>
-            <button class="btn btn-outline-danger ml-2" name="button">
+            <button class="user-delete btn btn-outline-danger ml-2" name="button" data-id="{% url 'users:user_delete' profile.pk %}">
                 Delete User Account
             </button>
 

@@ -54,7 +54,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     city = models.CharField(max_length=25, blank=True)
     country = models.CharField(max_length=25, blank=True)
-    birthday = models.DateField(default = datetime.date(1970, 1,1), blank=True, null=True)
+    birthday = models.DateField(blank=True, null=True)
     image = models.ImageField(default='default-profile.jpg', upload_to=save_image_path, blank=True)
 
     objects = UserManager()

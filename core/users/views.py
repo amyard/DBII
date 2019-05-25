@@ -10,10 +10,10 @@ from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes, force_text
 from django.views.generic import CreateView, View, DetailView
 
-from .forms import CustomAuthenticationForm, CustomUserCreationForm
+from .forms import CustomAuthenticationForm, CustomUserCreationForm, UserUpdateForm
 from .tokens import account_activation_token
 
-from bootstrap_modal_forms.generic import BSModalLoginView
+from bootstrap_modal_forms.generic import BSModalLoginView, BSModalUpdateView, BSModalDeleteView
 
 
 User = get_user_model()
@@ -88,3 +88,26 @@ class ProfileDetailView(DetailView):
     model = User
     context_object_name = 'profile'
     template_name = 'users/user-detail.html'
+
+
+class ProfileUpdateView(BSModalUpdateView):
+    model = User
+    template_name = 'users/user-update.html'
+    form_class= UserUpdateForm
+    success_message = 'Success: Profile Information was updated.'
+
+    def get_form_kwargs(self, *args, **kwargs):
+        kwargs = super(ProfileUpdateView, self).get_form_kwargs(*args, **kwargs)
+        kwargs['user'] = self.request.user
+        return kwargs
+
+    def get_success_url(self, **kwargs):
+        return self.request.META.get('HTTP_REFERER')
+
+
+
+class ProfileDeleteView(BSModalDeleteView):
+    model = User
+    template_name = 'users/user-delete.html'
+    success_message = 'Success: Your Account was deleted.'
+    success_url = reverse_lazy('core:base_view')

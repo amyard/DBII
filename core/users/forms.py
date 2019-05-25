@@ -7,6 +7,10 @@ from django.urls import reverse
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Submit, Row, Column, Button
 
+from bootstrap_modal_forms.forms import BSModalForm
+from datetime import date
+from dateutil.relativedelta import relativedelta
+
 
 User = get_user_model()
 
@@ -108,3 +112,34 @@ class CustomUserCreationForm(forms.ModelForm):
             raise forms.ValidationError('Incorrect email.')
         return email
 
+
+class UserUpdateForm(BSModalForm):
+    username = forms.CharField(label='Username', widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your username'}))
+    city = forms.CharField(label='City', widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter city'}))
+    country = forms.CharField(label='Country', widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter country'}))
+    birthday = forms.DateField(label='Birthday', widget=forms.DateInput(format=('%Y-%m-%d'), attrs={'type': 'date'}))
+
+    class Meta:
+        model = User
+        fields = ['username', 'city', 'country', 'birthday']
+
+    def __init__(self, *args, **kwargs):
+        self.user = kwargs.pop('user', '')
+        super(UserUpdateForm, self).__init__(*args, **kwargs)
+
+
+    def clean_username(self):
+        username = self.cleaned_data['username']
+        if User.objects.exclude(username=self.user.username).filter(username=username).exists():
+            raise forms.ValidationError('User with this name already exist.')
+        return username
+
+    def clean_birthday(self):
+        birthday = self.cleaned_data['birthday']
+        old = date.today() - relativedelta(years=110)
+
+        if birthday >= date.today():
+            raise forms.ValidationError('Incorrect date. You are too young.')
+        if birthday < old:
+            raise forms.ValidationError('Omg, are you immortal. You are too old for us.')
+        return birthday
