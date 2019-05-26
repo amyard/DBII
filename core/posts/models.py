@@ -2,6 +2,7 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.conf import settings
 from django.utils.text import slugify
+from django.urls import reverse
 
 from model_utils.models import TimeStampedModel
 import datetime
@@ -28,6 +29,9 @@ class Post(TimeStampedModel):
 
     class Meta:
         ordering = ['-created']
+
+    def get_absolute_url(self):
+        return reverse('core:post-detail', kwargs={'post_slug':self.slug})
 
     def save(self, *args, **kwargs):
         if not self.id:

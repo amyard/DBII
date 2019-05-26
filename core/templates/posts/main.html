@@ -4,24 +4,24 @@
 
 {% block content %}
 
-<div class="my-3" style="margin-bottom: 20px;">
+<div class="my-3">
 
     <div class="content px-3 py-3">
         <div class="row">
             {% for post in posts %}
             <div class="item col-lg-4 col-md-6 mb-4">
                 <div class="card h-100 main-card">
-                    <div class="mt-2 mx-3    inner">
+                    <div class="mt-2 mx-3 inner">
                         <img class="card-img-top" src="{{ post.image.url }}" alt="">
                     </div>
                     <div class="card-body">
                         <h4 class="card-title">
-                            <a href="">{{ post.title }}</a>
+                            <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
                         </h4>
                         <h6 style="color:grey;">{{ post.created }}</h6>
                         <h6>By {{ post.author.username }}</h6>
                         <p class="card-text"><em>{{ post.content|truncatewords:30 }}</em></p>
-                        <a href="" class="read-more">Read more...</a>
+                        <a href="{{ post.get_absolute_url }}" class="read-more">Read more...</a>
                     </div>
 
                     <!--   TODO ADD COMMENT AND LIKES   -->

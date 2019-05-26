@@ -12,7 +12,7 @@
 11. ~~Frond-End: main posts and sidebar.~~
 12. App Post: redirect with to login if anonymous - LoginRequiredMixin
 13. ~~App Post: model and listview~~
-14. App Post: detailview
+14. ~~App Post: detailview~~
 15. App Post: form and createview with modal
 16. App Post: form and updateview with modal
 17. App Post: form and deleteview with modal+regirect to main page
