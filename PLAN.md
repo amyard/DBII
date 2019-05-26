@@ -10,7 +10,7 @@
 9.  ~~Пользователи: update view / delete account.~~
 10. ~~Пользователи: после активате - либо на listview, либо update user info~~
 11. ~~Frond-End: main posts and sidebar.~~
-12. App Post: redirect with to ligin if anonymous
+12. App Post: redirect with to login if anonymous - LoginRequiredMixin
 13. App Post: model and listview
 14. App Post: detailview
 15. App Post: form and createview with modal
@@ -21,7 +21,7 @@
 20. App Post: comments - пагинация
 21. App Post: like/dislike - with jquery
 22. App Post: фильтрация - по комментам/по лайкам
-23. App Post: sidebar - через templatetag: самые обсуждаемые статтьи/ самые трендовые/ если в detailview то рандомно другие статтьи от этого автора
+23. App Post: sidebar - через templatetag: самые обсуждаемые статтьи/ самые трендовые/ если в detailview то рандомно другие статтьи от этого автора - карусель для popular posts - в detailview 
 24. App Post: search view
 25. Пользователи: сайдбар - все статтьи пользователя.
 26. Populate data 
