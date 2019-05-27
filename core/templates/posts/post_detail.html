@@ -43,10 +43,10 @@
                         <h5 class="mt-2">Comment was added at {{ comment.created }} by <b>{{ comment.user.username }}</b>:
 
                             {% if request.user == comment.user or request.user.is_admin %}
-                            <button type="button" class="delete-comment btn btn-sm btn-danger mr-1 float-right" data-id="" title="Delete Comment" data-toggle="tooltip" data-placement="bottom">
+                            <button type="button" class="delete-comment btn btn-sm btn-danger mr-1 float-right" data-id="{% url 'posts:comment_delete' comment.pk %}" title="Delete Comment" data-toggle="tooltip" data-placement="bottom">
                                 <span class="fa fa-trash"></span>
                             </button>
-                            <button type="button" class="update-comment btn btn-sm btn-primary mr-1 ml-3 float-right" data-id="" title="Update Comment" data-toggle="tooltip" data-placement="bottom">
+                            <button type="button" class="update-comment btn btn-sm btn-primary mr-1 ml-3 float-right" data-id="{% url 'posts:comment_update' comment.pk %}" title="Update Comment" data-toggle="tooltip" data-placement="bottom">
                                 <span class="fa fa-edit"></span>
                             </button>
                             {% endif %}
@@ -116,12 +116,23 @@ $(function () {
         $(this).modalForm({formURL: $(this).data('item-id')});
       });
 
-    // Hide message
-    $(".alert").fadeTo(4000, 500).slideUp(500, function(){
-        $(".alert").slideUp(500);
-    });
 
-    $('[data-toggle="tooltip"]').tooltip();
+      // Delete comment
+      $(".delete-comment").each(function () {
+        $(this).modalForm({formURL: $(this).data('id')});
+      });
+
+      // Update comment
+      $(".update-comment").each(function () {
+        $(this).modalForm({formURL: $(this).data('id')});
+      });
+
+      // Hide message
+      $(".alert").fadeTo(4000, 500).slideUp(500, function(){
+        $(".alert").slideUp(500);
+      });
+
+      $('[data-toggle="tooltip"]').tooltip();
 
 });
 </script>
@@ -168,6 +179,8 @@ $(document).ready(function(){
 		    data: data,
 		    success: function(data){
 		        $.each(data, function(field){
+		            var deleteUrl = '{% url "posts:comment_delete" pk=1234567 %}'.replace('1234567', data[field]['ids'])
+		            var updateUrl = '{% url "posts:comment_update" pk=1234567 %}'.replace('1234567', data[field]['ids'])
 		            $('.new-comment').prepend('\
                         <div>\
                         <h5 class="mt-2">Comment was added at '+data[field]['created']+' by <b>'+data[field]['user']+'</b>:\
@@ -181,11 +194,23 @@ $(document).ready(function(){
                         </div>\
                         <p>'+data[field]['text']+'</p>\
 		            ')
+		            $('.delete-comment').attr('data-id', deleteUrl)
+		            $('.update-comment').attr('data-id', updateUrl)
 
                     // clear fields
                     $('#id_text').val('')
                     $('.empty-tag').hide()
                     $('.comments-count').html('All Comments ('+data[field]['count']+'):')
+
+                    // Delete comment
+                    $(".delete-comment").each(function () {
+                        $(this).modalForm({formURL: $(this).data('id')});
+                    });
+
+                    // Update comment
+                    $(".update-comment").each(function () {
+                        $(this).modalForm({formURL: $(this).data('id')});
+                    });
 		        })
 		    }
 		})

@@ -39,3 +39,10 @@ class CommentForm(forms.Form):
     class Meta:
         model = Comment
         fields = ['text']
+
+
+class CommentUpdateForm(BSModalForm):
+    text = forms.CharField(label='', widget=forms.Textarea(attrs={'class': 'form-control', 'rows': 4, 'cols': 100, 'placeholder': 'Enter your comment'}))
+    class Meta:
+        model = Comment
+        fields = ['text']

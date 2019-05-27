@@ -5,7 +5,7 @@ from django.shortcuts import render, reverse
 from django.views.generic import ListView, DetailView, View
 
 from .models import Post, Comment
-from .forms import PostForm, PostUpdateForm, CommentForm
+from .forms import PostForm, PostUpdateForm, CommentForm, CommentUpdateForm
 
 from bootstrap_modal_forms.generic import BSModalCreateView, BSModalUpdateView, BSModalDeleteView
 
@@ -100,3 +100,22 @@ class CommentCreateView(View):
                     'ids': new_comment.id,
                     'user': self.request.user.username}]
         return JsonResponse(comment, safe=False)
+
+
+class CommentDeleteView(BSModalDeleteView):
+    model = Comment
+    template_name = 'posts/comment_delete.html'
+    success_message = 'Success: Comment was deleted.'
+
+    def get_success_url(self, **kwargs):
+        return self.request.META.get('HTTP_REFERER')
+
+
+class CommentUpdateView(BSModalUpdateView):
+    model = Comment
+    form_class = CommentUpdateForm
+    template_name = 'posts/comment_update.html'
+    success_message = 'Success: Comment was updated.'
+
+    def get_success_url(self, **kwargs):
+        return self.request.META.get('HTTP_REFERER')
