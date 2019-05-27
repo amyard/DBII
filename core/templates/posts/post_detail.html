@@ -24,6 +24,24 @@
         </div>
         <hr>
 
+
+        <!--  LIKE  TOGGLE -->
+        <div class="separator clear-left user-reaction mx-3">
+            <h4>Do you like the post?</h4>
+            <div class="likes-total-info">
+                <i class="fas fa-heart fa-lg"><span id="liked"> {{ post.likes.count }}</span></i>
+
+                {% if buttons %}
+                    <button id="like" class="btn btn-danger ml-3 mb-1" >Dislike</button>
+                {% else %}
+                    <button id="like" class="btn btn-success ml-3 mb-1" >Like</button>
+                {% endif %}
+
+                <input type="hidden" id="product" data-id = '{{ product.id }}'>
+            </div>
+        </div>
+        <hr>
+
         <!--  COMMENTS  -->
         <h4 class="mx-3">Do you want to left comment? Fill the form.</h4>
         <div class ='comment-form mx-3'>
