@@ -1,5 +1,7 @@
 from django.contrib import admin
+from django.db import models
 from .models import Post
+from tinymce.widgets import TinyMCE
 
 
 @admin.register(Post)
@@ -16,3 +18,7 @@ class PostAdmin(admin.ModelAdmin):
         ('General info', {'fields':('author', 'content', 'image',)}),
         ('Create/Update', {'fields':('created','modified',)})
     )
+
+    formfield_overrides = {
+        models.TextField: {'widget':TinyMCE()}
+    }

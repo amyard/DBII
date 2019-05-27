@@ -35,4 +35,4 @@
 ### Aditional TODO
 1.  Login via Social Network
 2.  Searchview via postgresql
-3.  TinyMCE 
+3.  ~~TinyMCE~~ 

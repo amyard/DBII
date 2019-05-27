@@ -19,7 +19,7 @@
             <h3 class="card-title text-center">{{ post.title }}</h3>
             <h6 style="color:grey;">{{ post.created }}</h6>
             <h6>By {{ post.author.username }}</h6>
-            <p class="card-text"><em>{{ post.content }}</em></p>
+            <p class="card-text"><em>{{ post.content|safe }}</em></p>
         </div>
     </div>
 
