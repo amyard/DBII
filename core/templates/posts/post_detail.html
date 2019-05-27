@@ -16,9 +16,7 @@
             <img class="card-img-top" src="{{ post.image.url }}" alt="">
         </div>
         <div class="card-body">
-            <h3 class="card-title text-center">
-                <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-            </h3>
+            <h3 class="card-title text-center">{{ post.title }}</h3>
             <h6 style="color:grey;">{{ post.created }}</h6>
             <h6>By {{ post.author.username }}</h6>
             <p class="card-text"><em>{{ post.content }}</em></p>
@@ -42,17 +40,41 @@
 
 
 {% if request.user == post.author or profile.is_admin %}
-<div class="admin-panel align-items-center">
-    {% if profile.is_admin %}
-        <a href="/admin" class = 'btn btn-outline-primary'>Admin</a>
-    {% endif %}
-    <a href="" class = 'btn btn-outline-success d-block'>Create Post</a>
-    <a href="" class = 'btn btn-outline-warning d-block'>Edit Post</a>
-    <a href="" class = 'btn btn-danger d-block'>Delete Post</a>
-</div>
+    <div class="admin-panel align-items-center">
+        {% if profile.is_admin %}
+            <a href="/admin" class = 'btn btn-outline-primary'>Admin</a>
+        {% endif %}
+        <!--    TODO: text-colors hover    -->
+        <a href="#" class='create-post btn btn-outline-success d-block'>Create Post</a>
+        <a href="" class = 'btn btn-outline-warning d-block'>Edit Post</a>
+        <a href="" class = 'btn btn-danger d-block'>Delete Post</a>
+    </div>
 {% endif %}
 
 
+{% endblock %}
 
+
+{% block js %}
+
+<script>
+<!-- HIDE MESSAGES -->
+$(function () {
+
+      // Create book button
+      $(".create-post").each(function () {
+        $('#change-modal').removeClass('modal-dialog');
+        $('#change-modal').addClass('modal-dialog modal-lg');
+        $(this).modalForm({formURL: "{% url 'posts:post_create' %}"});
+      });
+
+
+    // Hide message
+    $(".alert").fadeTo(4000, 500).slideUp(500, function(){
+        $(".alert").slideUp(500);
+    });
+
+});
+</script>
 
 {% endblock %}

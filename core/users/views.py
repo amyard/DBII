@@ -30,7 +30,7 @@ class CustomLoginView(BSModalLoginView):
     authentication_form = CustomAuthenticationForm
     template_name = 'users/signin.html'
     success_message = 'Success: You were successfully logged in.'
-    success_url = reverse_lazy('core:base_view')
+    success_url = reverse_lazy('posts:base_view')
 
 
 class SignUpView(View):
@@ -110,4 +110,4 @@ class ProfileDeleteView(BSModalDeleteView):
     model = User
     template_name = 'users/user-delete.html'
     success_message = 'Success: Your Account was deleted.'
-    success_url = reverse_lazy('core:base_view')
+    success_url = reverse_lazy('posts:base_view')

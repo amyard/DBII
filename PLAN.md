@@ -13,7 +13,7 @@
 12. App Post: redirect with to login if anonymous - LoginRequiredMixin
 13. ~~App Post: model and listview~~
 14. ~~App Post: detailview~~
-15. App Post: form and createview with modal
+15. ~~App Post: form and createview with modal~~
 16. App Post: form and updateview with modal
 17. App Post: form and deleteview with modal+regirect to main page
 18. App Post: add comments - model, form, frontend, add with jquery
@@ -35,3 +35,4 @@
 ### Aditional TODO
 1.  Login via Social Network
 2.  Searchview via postgresql
+3.  TinyMCE 

@@ -31,7 +31,7 @@ class Post(TimeStampedModel):
         ordering = ['-created']
 
     def get_absolute_url(self):
-        return reverse('core:post-detail', kwargs={'post_slug':self.slug})
+        return reverse('posts:post_detail', kwargs={'post_slug':self.slug})
 
     def save(self, *args, **kwargs):
         if not self.id:

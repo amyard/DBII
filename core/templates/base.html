@@ -41,9 +41,9 @@
     </nav>
 
 
-
+<!--  <div class="modal-dialog modal-lg" role="document">  -->
     <div class="modal fade" tabindex="-1" role="dialog" id="modal">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" role="document" id="change-modal">
           <div class="modal-content"></div>
         </div>
     </div>
@@ -88,6 +88,7 @@ $(function () {
     $(".user-delete").each(function () {
         $(this).modalForm({formURL: $(this).data('id')});
     });
+
 
     // Hide message
     $(".alert").fadeTo(4000, 500).slideUp(500, function(){
