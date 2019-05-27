@@ -57,6 +57,7 @@ class PostCreateView(BSModalCreateView):
         return super().form_valid(form)
 
 
+# class PostUpdateView(BSModalUpdateView):
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, BSModalUpdateView):
     model = Post
     template_name = 'posts/post_update.html'
@@ -66,7 +67,7 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, BSModalUpdateView)
 
     def get_form_kwargs(self, *args, **kwargs):
         kwargs = super(PostUpdateView, self).get_form_kwargs(*args, **kwargs)
-        kwargs['pk'] = self.kwargs['pk']
+        kwargs['post_slug'] = self.kwargs['post_slug']
         return kwargs
 
     def form_valid(self, form):
@@ -79,7 +80,7 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, BSModalUpdateView)
 
     def test_func(self):
         post = self.get_object()
-        if self.request.user == post.author or self.request.user == self.request.user.is_superuser:
+        if self.request.user == post.author or self.request.user.is_admin:
             return True
         return False
 
@@ -99,8 +100,8 @@ class CommentCreateView(View):
         if comment == '':
             return JsonResponse({}, safe=False)
         else:
-            new_comment = Comment.objects.create(product=Post.objects.get(id=post_id), user=request.user, text=comment)
-        count = Comment.objects.filter(product=Post.objects.get(id=post_id)).count()
+            new_comment = Comment.objects.create(post=Post.objects.get(id=post_id), user=request.user, text=comment)
+        count = Comment.objects.filter(post=Post.objects.get(id=post_id)).count()
         created = new_comment.created.strftime('%b %d, %Y, %I:%M %p').replace('PM', 'p.m.').replace('AM', 'a.m.')
         comment = [{'text': new_comment.text,
                     'created': created,

@@ -23,12 +23,12 @@ class PostUpdateForm(BSModalForm):
         fields = ['title', 'slug', 'content', 'image']
 
     def __init__(self, *args, **kwargs):
-        self.pk = kwargs.pop('pk', '')
+        self.post_slug = kwargs.pop('post_slug', '')
         super(PostUpdateForm, self).__init__(*args, **kwargs)
 
     def clean_title(self):
         title = self.cleaned_data['title']
-        if Post.objects.exclude(pk=self.pk).filter(title=title).exists():
+        if Post.objects.exclude(slug=self.post_slug).filter(title=title).exists():
             raise forms.ValidationError('You cann\'t use this title again.')
         return title
 
