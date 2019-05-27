@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.db import models
-from .models import Post, Comment
+from .models import Post, Comment, Like
 from tinymce.widgets import TinyMCE
 
 
@@ -34,4 +34,15 @@ class CommentAdmin(admin.ModelAdmin):
         ('Post name', {'fields': ['post']}),
         ('User Info', {'fields': ['user']}),
         ('Content', {'fields': ['text']})
+    ]
+
+
+@admin.register(Like)
+class LikeAdmin(admin.ModelAdmin):
+    list_display = ('post', 'user',)
+    search_fields = ['post']
+
+    fieldsets = [
+        ('Post name', {'fields':['post']}),
+        ('User Info', {'fields': ['user']})
     ]

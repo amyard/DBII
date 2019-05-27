@@ -74,9 +74,8 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, BSModalUpdateView)
         form.instance.author = self.request.user
         return super().form_valid(form)
 
-    def get_success_url(self):
-        obj = self.kwargs['post_slug']
-        return reverse('posts:detail-post', kwargs={'post_slug': obj})
+    def get_success_url(self, **kwargs):
+        return self.request.META.get('HTTP_REFERER')
 
     def test_func(self):
         post = self.get_object()

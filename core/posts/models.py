@@ -55,3 +55,15 @@ class Comment(TimeStampedModel):
         verbose_name = 'Comment'
         verbose_name_plural = 'Comments'
         ordering = ['-id']
+
+
+class Like(TimeStampedModel):
+    post = models.ForeignKey(Post, related_name='likes', on_delete = models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, blank=True, null=True, related_name='likes', on_delete = models.CASCADE)
+
+    class Meta:
+        unique_together = ['post', 'user']
+        ordering = ['-id']
+
+    def __str__(self):
+        return f'{self.post} from {self.user.username}'
