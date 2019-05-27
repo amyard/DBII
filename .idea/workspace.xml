@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ce2040-d019-40ae-9664-4dada376e5c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/posts/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/templates/posts/post_create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/templates/posts/post_update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PLAN.md" beforeDir="false" afterPath="$PROJECT_DIR$/PLAN.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/posts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/posts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/posts/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/posts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/posts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/posts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/posts/post_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/posts/post_create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/templates/posts/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/posts/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/templates/users/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/users/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/users/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +23,8 @@
         <entry file="file://$PROJECT_DIR$/PLAN.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="179">
-                <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+              <first_editor relative-caret-position="194">
+                <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -37,10 +32,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/posts/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="534">
+              <caret line="75" column="20" lean-forward="true" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/posts/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/templates/posts/post_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="534">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="n#style#0;n#h6#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -53,8 +72,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -102,18 +121,19 @@
         <option value="$PROJECT_DIR$/core/templates/users/confirm_email/confirm_email_invalid.html" />
         <option value="$PROJECT_DIR$/core/posts/admin.py" />
         <option value="$PROJECT_DIR$/core/templates/posts/main.html" />
-        <option value="$PROJECT_DIR$/core/templates/posts/post_create.html" />
         <option value="$PROJECT_DIR$/config/settings.py" />
         <option value="$PROJECT_DIR$/core/users/views.py" />
         <option value="$PROJECT_DIR$/core/users/urls.py" />
         <option value="$PROJECT_DIR$/core/templates/users/signin.html" />
-        <option value="$PROJECT_DIR$/core/posts/forms.py" />
-        <option value="$PROJECT_DIR$/core/posts/views.py" />
-        <option value="$PROJECT_DIR$/core/posts/urls.py" />
         <option value="$PROJECT_DIR$/core/posts/models.py" />
         <option value="$PROJECT_DIR$/core/static/css/main.css" />
         <option value="$PROJECT_DIR$/core/templates/base.html" />
+        <option value="$PROJECT_DIR$/core/templates/posts/post_create.html" />
+        <option value="$PROJECT_DIR$/core/templates/posts/post_update.html" />
         <option value="$PROJECT_DIR$/core/templates/posts/post_detail.html" />
+        <option value="$PROJECT_DIR$/core/posts/forms.py" />
+        <option value="$PROJECT_DIR$/core/posts/urls.py" />
+        <option value="$PROJECT_DIR$/core/posts/views.py" />
         <option value="$PROJECT_DIR$/PLAN.md" />
       </list>
     </option>
@@ -158,6 +178,13 @@
               <item name="DBII" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DBII" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DBII" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="posts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -310,16 +337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/templates/posts/post_create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
-          <folding>
-            <element signature="e#263#270#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -455,42 +472,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/posts/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/posts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/templates/posts/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
           <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
           <folding>
             <element signature="n#style#0;n#h6#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/posts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="67" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -519,12 +506,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/templates/posts/post_update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/templates/posts/post_create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="39" column="7" lean-forward="true" selection-end-line="39" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/posts/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/posts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/templates/posts/post_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="534">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="n#style#0;n#h6#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/posts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="75" column="20" lean-forward="true" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -532,8 +563,8 @@
     <entry file="file://$PROJECT_DIR$/PLAN.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="179">
-            <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <first_editor relative-caret-position="194">
+            <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           </first_editor>
           <second_editor />
         </state>

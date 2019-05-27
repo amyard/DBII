@@ -1,9 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, reverse
 from django.views.generic import ListView, DetailView
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
 from .models import Post
-from .forms import PostForm
+from .forms import PostForm, PostUpdateForm
 
 from bootstrap_modal_forms.generic import BSModalCreateView, BSModalUpdateView, BSModalDeleteView
 
@@ -44,3 +45,32 @@ class PostCreateView(BSModalCreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+
+
+
+
+class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, BSModalUpdateView):
+    model = Post
+    template_name = 'posts/post_update.html'
+    form_class = PostUpdateForm
+    slug_url_kwarg = 'post_slug'
+    success_message = 'Success: Post was updated.'
+
+    def get_form_kwargs(self, *args, **kwargs):
+        kwargs = super(PostUpdateView, self).get_form_kwargs(*args, **kwargs)
+        kwargs['pk'] = self.kwargs['pk']
+        return kwargs
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        obj = self.kwargs['post_slug']
+        return reverse('posts:detail-post', kwargs={'post_slug': obj})
+
+    def test_func(self):
+        post = self.get_object()
+        if self.request.user == post.author or self.request.user == self.request.user.is_superuser:
+            return True
+        return False
