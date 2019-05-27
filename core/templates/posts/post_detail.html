@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 
 {% block title %}
    {{ post.title }} - {{ block.super }}
@@ -19,10 +20,48 @@
             <h3 class="card-title text-center">{{ post.title }}</h3>
             <h6 style="color:grey;">{{ post.created }}</h6>
             <h6>By {{ post.author.username }}</h6>
-            <p class="card-text"><em>{{ post.content|safe }}</em></p>
+                <p class="card-text"><em>{{ post.content|safe }}</em></p>
+        </div>
+        <hr>
+
+        <!--  COMMENTS  -->
+        <h4 class="mx-3">Do you want to left comment? Fill the form.</h4>
+        <div class ='comment-form mx-3'>
+            <form action = '' method = 'POST'>
+                    <input type="hidden" id="post" data-id = '{{ post.id }}'>
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                    <button class = 'btn btn-outline-primary mt-3' type = 'Submit' id = 'add_comment'>Add Comment</button>
+            </form><hr>
+        </div>
+        <div class="row mx-3">
+            <h4 class="ml-3 comments-count">All Comments ({{ post.comments.count }}):</h4>
+            <div class="col-md-12 new-comment"></div>
+            {% for comment in post.comments.all %}
+                <div class="col-md-12 mt-2 comment">
+                    <div>
+                        <h5 class="mt-2">Comment was added at {{ comment.created }} by <b>{{ comment.user.username }}</b>:
+
+                            {% if request.user == comment.user or request.user.is_admin %}
+                            <button type="button" class="delete-comment btn btn-sm btn-danger mr-1 float-right" data-id="" title="Delete Comment" data-toggle="tooltip" data-placement="bottom">
+                                <span class="fa fa-trash"></span>
+                            </button>
+                            <button type="button" class="update-comment btn btn-sm btn-primary mr-1 ml-3 float-right" data-id="" title="Update Comment" data-toggle="tooltip" data-placement="bottom">
+                                <span class="fa fa-edit"></span>
+                            </button>
+                            {% endif %}
+                        </h5>
+                    </div>
+                    <p>{{ comment.text }}</p>
+                </div>
+            {% empty %}
+                <p class="ml-3 empty-tag">There are no comments.</p>
+            {% endfor %}
         </div>
     </div>
 
+
+    <!--   SIDEBAR -->
     <div class="sidebar px-3 py-3">
         <h4>Most commented Posts</h4>
         <a href="#" class="d-block">Link 1</a>
@@ -39,12 +78,12 @@
 </div>
 
 
+<!--  ADMIN PANEL  -->
 {% if request.user == post.author or profile.is_admin %}
     <div class="admin-panel align-items-center">
         {% if profile.is_admin %}
             <a href="/admin" class = 'btn btn-outline-primary'>Admin</a>
         {% endif %}
-        <!--    TODO: text-colors hover    -->
         <a href="#" class='create-post btn btn-outline-success d-block'>Create Post</a>
         <a href="#" class = 'update-post btn btn-outline-warning d-block' data-item-id="{% url 'posts:post_update' post_slug=post.slug %}">Edit Post</a>
         <a href="#" class = 'delete-post btn btn-danger d-block' data-item-id="{% url 'posts:post_delete' post.pk %}">Delete Post</a>
@@ -58,7 +97,6 @@
 {% block js %}
 
 <script>
-<!-- HIDE MESSAGES -->
 $(function () {
 
       // Create post button
@@ -83,7 +121,78 @@ $(function () {
         $(".alert").slideUp(500);
     });
 
+    $('[data-toggle="tooltip"]').tooltip();
+
 });
+</script>
+
+
+
+<script>
+
+<!--  ADD COMMENT  -->
+
+$(document).ready(function(){
+	function getCookie(name) {
+	    var cookieValue = null;
+	    if (document.cookie && document.cookie !== '') {
+	        var cookies = document.cookie.split(';');
+	        for (var i = 0; i < cookies.length; i++) {
+	            var cookie = jQuery.trim(cookies[i]);
+	            // Does this cookie string begin with the name we want?
+	            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+	                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+	                break;
+	            }
+	        }
+	    }
+	    return cookieValue;
+	}
+	var csrftoken = getCookie('csrftoken');
+
+	$('#add_comment').on('click', function(e){
+		e.preventDefault()
+		var post_id = $('#post').attr('data-id')
+		var comment = $('#id_text').val()
+
+		data = {
+			post_id: post_id,
+			comment: comment,
+			csrfmiddlewaretoken: csrftoken
+		}
+
+		$.ajax({
+		    type: 'POST',
+		    url: '{% url "posts:add_comment" %}',
+		    dataType: 'json',
+		    data: data,
+		    success: function(data){
+		        $.each(data, function(field){
+		            $('.new-comment').prepend('\
+                        <div>\
+                        <h5 class="mt-2">Comment was added at '+data[field]['created']+' by <b>'+data[field]['user']+'</b>:\
+                            <button type="button" class="delete-comment btn btn-sm btn-danger mr-1 float-right" data-id="" title="Delete Comment" data-toggle="tooltip" data-placement="bottom">\
+                                <span class="fa fa-trash"></span>\
+                            </button>\
+                            <button type="button" class="update-comment btn btn-sm btn-primary mr-1 ml-3 float-right" data-id="" title="Update Comment" data-toggle="tooltip" data-placement="bottom">\
+                                <span class="fa fa-edit"></span>\
+                            </button>\
+                        </h5>\
+                        </div>\
+                        <p>'+data[field]['text']+'</p>\
+		            ')
+
+                    // clear fields
+                    $('#id_text').val('')
+                    $('.empty-tag').hide()
+                    $('.comments-count').html('All Comments ('+data[field]['count']+'):')
+		        })
+		    }
+		})
+	});
+})
+
+
 </script>
 
 {% endblock %}

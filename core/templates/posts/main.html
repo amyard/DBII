@@ -70,6 +70,41 @@
         <a href="#" class="d-block">Link 3</a>
     </div>
 
+
+
+
+    <!--  ADMIN PANEL  -->
+    <div class="admin-panel align-items-center">
+        {% if profile.is_admin %}
+            <a href="/admin" class = 'btn btn-outline-primary'>Admin</a>
+        {% endif %}
+        <a href="#" class='create-post btn btn-outline-success d-block'>Create Post</a>
+    </div>
+
 </div>
+
+{% endblock %}
+
+
+{% block js %}
+
+<script>
+<!-- HIDE MESSAGES -->
+$(function () {
+
+      // Create post button
+      $(".create-post").each(function () {
+        $('#change-modal').removeClass('modal-dialog');
+        $('#change-modal').addClass('modal-dialog modal-lg');
+        $(this).modalForm({formURL: "{% url 'posts:post_create' %}"});
+      });
+
+    // Hide message
+    $(".alert").fadeTo(4000, 500).slideUp(500, function(){
+        $(".alert").slideUp(500);
+    });
+
+});
+</script>
 
 {% endblock %}

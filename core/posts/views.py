@@ -1,9 +1,10 @@
-from django.shortcuts import render, reverse
-from django.views.generic import ListView, DetailView
-from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.http import JsonResponse
+from django.urls import reverse_lazy
+from django.shortcuts import render, reverse
+from django.views.generic import ListView, DetailView, View
 
-from .models import Post
+from .models import Post, Comment
 from .forms import PostForm, PostUpdateForm, CommentForm
 
 from bootstrap_modal_forms.generic import BSModalCreateView, BSModalUpdateView, BSModalDeleteView
@@ -80,3 +81,22 @@ class BookDeleteView(BSModalDeleteView):
     template_name = 'posts/post_delete.html'
     success_message = 'Success: Post was deleted.'
     success_url = reverse_lazy('posts:base_view')
+
+
+class CommentCreateView(View):
+    def post(self, request, *args, **kwargs):
+        post_id = self.request.POST.get('post_id')
+        comment = self.request.POST.get('comment')
+
+        if comment == '':
+            return JsonResponse({}, safe=False)
+        else:
+            new_comment = Comment.objects.create(product=Post.objects.get(id=post_id), user=request.user, text=comment)
+        count = Comment.objects.filter(product=Post.objects.get(id=post_id)).count()
+        created = new_comment.created.strftime('%b %d, %Y, %I:%M %p').replace('PM', 'p.m.').replace('AM', 'a.m.')
+        comment = [{'text': new_comment.text,
+                    'created': created,
+                    'count': count,
+                    'ids': new_comment.id,
+                    'user': self.request.user.username}]
+        return JsonResponse(comment, safe=False)
