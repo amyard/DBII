@@ -72,6 +72,13 @@
     float: left;
 }
 
+.sidebar h4 { text-decoration: underline; }
+.sidebar a {
+    text-decoration: underline;
+    text-decoration-color: #9FCDFF;
+    display: block;
+    margin-bottom: 2%;
+}
 
 /*  CONTENT SECTION - POST DISPLAY  */
 .inner { overflow: hidden; }

@@ -34,8 +34,7 @@ class Post(TimeStampedModel):
         return reverse('posts:post_detail', kwargs={'post_slug':self.slug})
 
     def save(self, *args, **kwargs):
-        if not self.id:
-            self.slug = gen_slug(self.title)
+        self.slug = gen_slug(self.title)
         super().save(*args, **kwargs)
 
     def __str__(self):

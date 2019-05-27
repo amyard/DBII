@@ -20,7 +20,7 @@
 19. ~~App Post: comments - update, delete + jquery added~~
 20. ~~App Post: comments - пагинация~~
 21. ~~App Post: like/dislike - with jquery~~
-22. App Post: фильтрация - по комментам/по лайкам
+22. ~~App Post: фильтрация - по комментам/по лайкам~~
 23. App Post: sidebar - через templatetag: самые обсуждаемые статтьи/ самые трендовые/ если в detailview то рандомно другие статтьи от этого автора - карусель для popular posts - в detailview 
 24. App Post: search view
 25. Пользователи: сайдбар - все статтьи пользователя.
