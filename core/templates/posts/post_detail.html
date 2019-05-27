@@ -37,7 +37,7 @@
                     <button id="like" class="btn btn-success ml-3 mb-1" >Like</button>
                 {% endif %}
 
-                <input type="hidden" id="product" data-id = '{{ product.id }}'>
+                <input type="hidden" id="post" data-id = '{{ post.id }}'>
             </div>
         </div>
         <hr>
@@ -126,8 +126,8 @@
             <a href="/admin" class = 'btn btn-outline-primary'>Admin</a>
         {% endif %}
         <a href="#" class='create-post btn btn-outline-success d-block'>Create Post</a>
-        <a href="#" class = 'update-post btn btn-outline-warning d-block' data-item-id="{% url 'posts:post_update' post_slug=post.slug %}">Edit Post</a>
-        <a href="#" class = 'delete-post btn btn-danger d-block' data-item-id="{% url 'posts:post_delete' post.pk %}">Delete Post</a>
+        <a href="#" class='update-post btn btn-outline-warning d-block' data-item-id="{% url 'posts:post_update' post_slug=post.slug %}">Edit Post</a>
+        <a href="#" class='delete-post btn btn-danger d-block' data-item-id="{% url 'posts:post_delete' post.pk %}">Delete Post</a>
     </div>
 {% endif %}
 
@@ -185,8 +185,31 @@ $(function () {
 
 <script>
 
-<!--  ADD COMMENT  -->
+<!-- LIKE TOGGLE  -->
+$(document).ready(function(){
+    $('#like').on('click', function(e) {
+		e.preventDefault()
+		var like = 'like'
+		var post_id = $('#post').attr('data-id')
+		data = {
+			post_id:post_id
+		}
+		$.ajax({
+			type:'GET',
+			url: '{% url "posts:like_toggle" %}',
+			dataType: 'json',
+			data: data,
+			success: function(data){
+				$('#liked').html(' '+data.res)
+				$('#like').html(data.button[0])
+				$('#like').removeClass().addClass("ml-3 mb-1 btn btn-"+data.button[1])
+			}
+		})
+	})
+});
 
+
+<!--  ADD COMMENT  -->
 $(document).ready(function(){
 	function getCookie(name) {
 	    var cookieValue = null;

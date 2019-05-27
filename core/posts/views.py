@@ -5,7 +5,7 @@ from django.shortcuts import render, reverse
 from django.views.generic import ListView, DetailView, View
 from django.core.paginator import Paginator
 
-from .models import Post, Comment
+from .models import Post, Comment, Like
 from .forms import PostForm, PostUpdateForm, CommentForm, CommentUpdateForm
 
 from bootstrap_modal_forms.generic import BSModalCreateView, BSModalUpdateView, BSModalDeleteView
@@ -43,6 +43,9 @@ class PostDetailView(DetailView):
         page_number = self.request.GET.get('page', 1)
         page = p.get_page(page_number)
         context['comments'] = page
+
+        # change color of Like/Dislike button
+        context['buttons'] = Like.objects.filter(post=self.get_object(), user=self.request.user)
         return context
 
 
@@ -57,7 +60,6 @@ class PostCreateView(BSModalCreateView):
         return super().form_valid(form)
 
 
-# class PostUpdateView(BSModalUpdateView):
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, BSModalUpdateView):
     model = Post
     template_name = 'posts/post_update.html'
@@ -127,3 +129,24 @@ class CommentUpdateView(BSModalUpdateView):
 
     def get_success_url(self, **kwargs):
         return self.request.META.get('HTTP_REFERER')
+
+
+class LikeToggleView(View):
+    def get(self, request, *args, **kwargs):
+        post_id = self.request.GET.get('post_id')
+        post = Post.objects.get(id=post_id)
+
+        if not Like.objects.filter(post=post, user=self.request.user).exists():
+            Like.objects.create(post=post, user=self.request.user)
+            button = ['Dislike', 'danger']
+        else:
+            Like.objects.filter(post=post, user=self.request.user).delete()
+            button = ['Like', 'success']
+
+        res = Like.objects.filter(post__id=post_id).count()
+
+        data = {
+            'res': res,
+            'button': button
+        }
+        return JsonResponse(data)

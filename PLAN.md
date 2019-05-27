@@ -19,7 +19,7 @@
 18. ~~App Post: add comments - model, form, frontend, add with jquery~~
 19. ~~App Post: comments - update, delete + jquery added~~
 20. ~~App Post: comments - пагинация~~
-21. App Post: like/dislike - with jquery
+21. ~~App Post: like/dislike - with jquery~~
 22. App Post: фильтрация - по комментам/по лайкам
 23. App Post: sidebar - через templatetag: самые обсуждаемые статтьи/ самые трендовые/ если в detailview то рандомно другие статтьи от этого автора - карусель для popular posts - в detailview 
 24. App Post: search view
@@ -31,6 +31,7 @@
     - В settings.py в открытом доступе лежат креденшиалсы
 29. Heroku
 30. READ ME - detail with all tasks and some description
+31. Detail View: add Popular posts with carousel by 3 items
 
 ### Aditional TODO
 1.  Login via Social Network
