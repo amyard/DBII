@@ -74,3 +74,10 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, BSModalUpdateView)
         if self.request.user == post.author or self.request.user == self.request.user.is_superuser:
             return True
         return False
+
+
+class BookDeleteView(BSModalDeleteView):
+    model = Post
+    template_name = 'posts/post_delete.html'
+    success_message = 'Success: Post was deleted.'
+    success_url = reverse_lazy('posts:base_view')

@@ -15,7 +15,7 @@
 14. ~~App Post: detailview~~
 15. ~~App Post: form and createview with modal~~
 16. ~~App Post: form and updateview with modal~~
-17. App Post: form and deleteview with modal+regirect to main page
+17. ~~App Post: form and deleteview with modal+regirect to main page~~
 18. App Post: add comments - model, form, frontend, add with jquery
 19. App Post: comments - update, delete
 20. App Post: comments - пагинация

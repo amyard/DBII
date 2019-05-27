@@ -47,7 +47,7 @@
         <!--    TODO: text-colors hover    -->
         <a href="#" class='create-post btn btn-outline-success d-block'>Create Post</a>
         <a href="#" class = 'update-post btn btn-outline-warning d-block' data-item-id="{% url 'posts:post_update' post_slug=post.slug %}">Edit Post</a>
-        <a href="" class = 'btn btn-danger d-block'>Delete Post</a>
+        <a href="#" class = 'delete-post btn btn-danger d-block' data-item-id="{% url 'posts:post_delete' post.pk %}">Delete Post</a>
     </div>
 {% endif %}
 
@@ -73,6 +73,10 @@ $(function () {
         $(this).modalForm({formURL: $(this).data('item-id')});
       });
 
+      // Delete post buttons
+      $(".delete-post").each(function () {
+        $(this).modalForm({formURL: $(this).data('item-id')});
+      });
 
     // Hide message
     $(".alert").fadeTo(4000, 500).slideUp(500, function(){
