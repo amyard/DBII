@@ -37,7 +37,7 @@
         <div class="row mx-3">
             <h4 class="ml-3 comments-count">All Comments ({{ post.comments.count }}):</h4>
             <div class="col-md-12 new-comment"></div>
-            {% for comment in post.comments.all %}
+            {% for comment in comments %}
                 <div class="col-md-12 mt-2 comment">
                     <div>
                         <h5 class="mt-2">Comment was added at {{ comment.created }} by <b>{{ comment.user.username }}</b>:
@@ -57,6 +57,29 @@
             {% empty %}
                 <p class="ml-3 empty-tag">There are no comments.</p>
             {% endfor %}
+
+            <!--  PAGINATION FOR COMMENTS  -->
+            <div class="mt-3">
+                {% if comments.has_other_pages %}
+                    {% if comments.has_previous %}
+                        <a href="?page=1" class = 'btn btn-outline-primary mb-4'>First</a>
+                        <a href="?page={{ comments.previous_page_number }}" class = 'btn btn-outline-primary mb-4'>Previous</a>
+                    {% endif %}
+
+                    {% for num in comments.paginator.page_range %}
+                        {% if comments.number == num %}
+                            <a href="?page={{ num }}" class = 'btn btn-primary mb-4'>{{ num }}</a>
+                        {% elif num > comments.number|add:'-3' and num < comments.number|add:'3' %}
+                            <a href="?page={{ num }}" class = 'btn btn-ouline-primary mb-4'>{{ num }}</a>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if comments.has_next %}
+                        <a href="?page={{ comments.next_page_number }}" class = 'btn btn-outline-primary mb-4'>Next</a>
+                        <a href="?page={{ comments.paginator.num_pages }}" class = 'btn btn-outline-primary mb-4'>Last</a>
+                    {% endif %}
+                {% endif %}
+            </div>
         </div>
     </div>
 
@@ -92,6 +115,9 @@
 
 
 {% endblock %}
+
+
+
 
 
 {% block js %}

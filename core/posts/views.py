@@ -3,6 +3,7 @@ from django.http import JsonResponse
 from django.urls import reverse_lazy
 from django.shortcuts import render, reverse
 from django.views.generic import ListView, DetailView, View
+from django.core.paginator import Paginator
 
 from .models import Post, Comment
 from .forms import PostForm, PostUpdateForm, CommentForm, CommentUpdateForm
@@ -30,11 +31,18 @@ class PostDetailView(DetailView):
     context_object_name = 'post'
     slug_url_kwarg = 'post_slug'
     form = CommentForm
+    paginate_by = 3
 
     def get_context_data(self, *args, **kwargs):
         context = super(PostDetailView, self).get_context_data(*args, **kwargs)
         context['profile'] = self.request.user
         context['form'] = self.form
+
+        # Pagination for comments
+        p = Paginator(Comment.objects.filter(post=self.get_object()), self.paginate_by)
+        page_number = self.request.GET.get('page', 1)
+        page = p.get_page(page_number)
+        context['comments'] = page
         return context
 
 

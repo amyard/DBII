@@ -27,11 +27,11 @@ class PostAdmin(admin.ModelAdmin):
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
-    list_display = ('product', 'user',)
-    search_fields = ['product']
+    list_display = ('post', 'user',)
+    search_fields = ['post']
 
     fieldsets = [
-        ('Product name', {'fields': ['product']}),
+        ('Post name', {'fields': ['post']}),
         ('User Info', {'fields': ['user']}),
         ('Content', {'fields': ['text']})
     ]

@@ -44,7 +44,7 @@ class Post(TimeStampedModel):
 
 
 class Comment(TimeStampedModel):
-    product = models.ForeignKey(Post, related_name='comments', on_delete = models.CASCADE)
+    post = models.ForeignKey(Post, related_name='comments', on_delete = models.CASCADE)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, blank=True, null=True, related_name='comments', on_delete = models.CASCADE)
     text = models.TextField(_('Comment'), max_length = 500)
 
