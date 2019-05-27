@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.db import models
-from .models import Post
+from .models import Post, Comment
 from tinymce.widgets import TinyMCE
 
 
@@ -22,3 +22,16 @@ class PostAdmin(admin.ModelAdmin):
     formfield_overrides = {
         models.TextField: {'widget':TinyMCE()}
     }
+
+
+
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ('product', 'user',)
+    search_fields = ['product']
+
+    fieldsets = [
+        ('Product name', {'fields': ['product']}),
+        ('User Info', {'fields': ['user']}),
+        ('Content', {'fields': ['text']})
+    ]

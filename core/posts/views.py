@@ -4,7 +4,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
 from .models import Post
-from .forms import PostForm, PostUpdateForm
+from .forms import PostForm, PostUpdateForm, CommentForm
 
 from bootstrap_modal_forms.generic import BSModalCreateView, BSModalUpdateView, BSModalDeleteView
 
@@ -28,11 +28,12 @@ class PostDetailView(DetailView):
     model = Post
     context_object_name = 'post'
     slug_url_kwarg = 'post_slug'
-
+    form = CommentForm
 
     def get_context_data(self, *args, **kwargs):
         context = super(PostDetailView, self).get_context_data(*args, **kwargs)
         context['profile'] = self.request.user
+        context['form'] = self.form
         return context
 
 
@@ -45,8 +46,6 @@ class PostCreateView(BSModalCreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
-
-
 
 
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, BSModalUpdateView):

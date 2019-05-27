@@ -40,3 +40,18 @@ class Post(TimeStampedModel):
 
     def __str__(self):
         return self.title
+
+
+
+class Comment(TimeStampedModel):
+    product = models.ForeignKey(Post, related_name='comments', on_delete = models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, blank=True, null=True, related_name='comments', on_delete = models.CASCADE)
+    text = models.TextField(_('Comment'), max_length = 500)
+
+    def __str__(self):
+        return f'Comment from {self.user}'
+
+    class Meta:
+        verbose_name = 'Comment'
+        verbose_name_plural = 'Comments'
+        ordering = ['-id']
