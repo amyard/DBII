@@ -46,3 +46,15 @@ class CommentUpdateForm(BSModalForm):
     class Meta:
         model = Comment
         fields = ['text']
+
+
+
+class FilterForm(forms.Form):
+    choices = (
+        (1, 'All posts'),
+        (2, 'Most commented posts'),
+        (3, "Post without comments"),
+        (4, "Most popular posts"),
+        (5, "Posts without comments"),
+    )
+    position = forms.ChoiceField(label='', choices=choices, required=False, widget=forms.Select())

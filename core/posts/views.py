@@ -4,9 +4,10 @@ from django.urls import reverse_lazy
 from django.shortcuts import render, reverse
 from django.views.generic import ListView, DetailView, View
 from django.core.paginator import Paginator
+from django.db.models import Count, Q, Case, When
 
 from .models import Post, Comment, Like
-from .forms import PostForm, PostUpdateForm, CommentForm, CommentUpdateForm
+from .forms import PostForm, PostUpdateForm, CommentForm, CommentUpdateForm, FilterForm
 
 from bootstrap_modal_forms.generic import BSModalCreateView, BSModalUpdateView, BSModalDeleteView
 
@@ -18,10 +19,37 @@ class PostListView(ListView):
     model = Post
     context_object_name='posts'
     paginate_by=2
+    form = FilterForm
+
+    def get_queryset(self, *args, **kwargs):
+        qs = Post.objects.all()
+
+        # Filter posts system
+        filter_value = self.request.GET.get('position')
+        if filter_value:
+            if filter_value == '2':
+                uniq_ids = Post.objects.values('id').annotate(count=Count('comments')).order_by('-count').values_list('id', flat=True)
+            elif filter_value == '3':
+                uniq_ids = Post.objects.values('id').annotate(count=Count('comments')).order_by('count').values_list('id', flat=True)
+            elif filter_value == '4':
+                uniq_ids = Post.objects.values('id').annotate(count=Count('likes')).order_by('-count').values_list('id',flat=True)
+            elif filter_value == '5':
+                uniq_ids = Post.objects.values('id').annotate(count=Count('comments')).order_by('count').values_list('id', flat=True)
+
+            preserved = Case(*[When(pk=pk, then=pos) for pos, pk in enumerate(uniq_ids)])
+            qs = Post.objects.filter(id__in=uniq_ids).order_by(preserved)
+
+        return qs
+
 
     def get_context_data(self, *args, **kwargs):
         context = super(PostListView, self).get_context_data(*args, **kwargs)
         context['profile'] = self.request.user
+        context['form'] = self.form
+
+        # for paggination if filter
+        if self.request.GET.get('position'):
+            context['filter_cond'] = f"?position={self.request.GET.get('position')}"
         return context
 
 

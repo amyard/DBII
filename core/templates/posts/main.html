@@ -1,12 +1,21 @@
 {% extends 'base.html' %}
 {% load posts_tags %}
-
+{% load crispy_forms_tags %}
 
 {% block content %}
 
 <div class="my-3">
 
     <div class="content px-3 py-3">
+        <div class="filter mb-3">
+            <h5 class="d-inline mr-3"><b>Do you want to filter the posts?</b></h5>
+            <form action="" method="GET" class="mb-2 d-inline">
+                    {{ form.as_table }}
+                    <button type="submit" class="btn btn-outline-primary ml-2"><i class="fas fa-sort-amount-down mr-2"></i>Posts Filter</button>
+            </form>
+        </div>
+        <hr>
+
         <div class="row">
             {% for post in posts %}
             <div class="item col-lg-4 col-md-6 mb-4">
@@ -37,21 +46,21 @@
         <!--    PAGINATION    -->
         {% if is_paginated %}
 				{% if page_obj.has_previous %}
-					<a href="?page=1" class = 'btn btn-outline-primary mb-4'>First</a>
-					<a href="?page={{ page_obj.previous_page_number }}" class = 'btn btn-outline-primary mb-4'>Previous</a>
+					<a href="{% if filter_cond %}{{ filter_cond }}&{% else %}?{% endif %}page=1" class = 'btn btn-outline-primary mb-4'>First</a>
+					<a href="{% if filter_cond %}{{ filter_cond }}&{% else %}?{% endif %}page={{ page_obj.previous_page_number }}" class = 'btn btn-outline-primary mb-4'>Previous</a>
 				{% endif %}
 
 				{% for num in page_obj.paginator.page_range %}
 					{% if page_obj.number == num %}
-						<a href="?page={{ num }}" class = 'btn btn-primary mb-4'>{{ num }}</a>
+						<a href="{% if filter_cond %}{{ filter_cond }}&{% else %}?{% endif %}page={{ num }}" class = 'btn btn-primary mb-4'>{{ num }}</a>
 					{% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
-						<a href="?page={{ num }}" class = 'btn btn-ouline-primary mb-4'>{{ num }}</a>
+						<a href="{% if filter_cond %}{{ filter_cond }}&{% else %}?{% endif %}page={{ num }}" class = 'btn btn-ouline-primary mb-4'>{{ num }}</a>
 					{% endif %}
 				{% endfor %}
 
 				{% if page_obj.has_next %}
-					<a href="?page={{ page_obj.next_page_number }}" class = 'btn btn-outline-primary mb-4'>Next</a>
-					<a href="?page={{ page_obj.paginator.num_pages }}" class = 'btn btn-outline-primary mb-4'>Last</a>
+					<a href="{% if filter_cond %}{{ filter_cond }}&{% else %}?{% endif %}page={{ page_obj.next_page_number }}" class = 'btn btn-outline-primary mb-4'>Next</a>
+					<a href="{% if filter_cond %}{{ filter_cond }}&{% else %}?{% endif %}page={{ page_obj.paginator.num_pages }}" class = 'btn btn-outline-primary mb-4'>Last</a>
 				{% endif %}
         {% endif %}
 
