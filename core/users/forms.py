@@ -76,7 +76,7 @@ class CustomUserCreationForm(forms.ModelForm):
             Row(
                 Column(Submit('submit', 'Sign UP', css_class='btn btn-primary px-4'), css_class='form-group col-md-1 mb-3 mt-3'),
                 Column(Button('cancel', 'Cancel', css_class='btn btn-danger px-4',
-                              onclick="window.location.href = '{}';".format(reverse('core:base_view'))
+                              onclick="window.location.href = '{}';".format(reverse('posts:base_view'))
                               ), css_class='form-group col-md-1 mb-0 mt-3 ml-5'),
 
             ),

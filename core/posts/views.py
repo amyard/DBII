@@ -14,7 +14,7 @@ from bootstrap_modal_forms.generic import BSModalCreateView, BSModalUpdateView, 
 
 
 
-class PostListView(ListView):
+class PostListView(LoginRequiredMixin, ListView):
     template_name='posts/main.html'
     model = Post
     context_object_name='posts'
@@ -52,7 +52,7 @@ class PostListView(ListView):
 
 
 
-class PostDetailView(DetailView):
+class PostDetailView(LoginRequiredMixin, DetailView):
     model = Post
     context_object_name = 'post'
     slug_url_kwarg = 'post_slug'
@@ -112,7 +112,7 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, BSModalUpdateView)
         return False
 
 
-class BookDeleteView(BSModalDeleteView):
+class PostDeleteView(BSModalDeleteView):
     model = Post
     template_name = 'posts/post_delete.html'
     success_message = 'Success: Post was deleted.'
@@ -178,7 +178,7 @@ class LikeToggleView(View):
         return JsonResponse(data)
 
 
-class SearchView(ListView):
+class SearchView(LoginRequiredMixin, ListView):
     template_name = 'posts/main.html'
     model = Post
     context_object_name = 'posts'

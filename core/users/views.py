@@ -1,14 +1,16 @@
 from django.shortcuts import render
 from django.core.mail import EmailMessage
 from django.contrib.sites.shortcuts import get_current_site
-from django.contrib.auth.views import LogoutView
+from django.contrib.auth.views import LogoutView, LoginView
 from django.contrib.auth import get_user_model
+from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
 from django.urls import reverse_lazy
 from django.template.loader import render_to_string
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes, force_text
 from django.views.generic import CreateView, View, DetailView
+
 
 from .forms import CustomAuthenticationForm, CustomUserCreationForm, UserUpdateForm
 from .tokens import account_activation_token
@@ -26,7 +28,7 @@ class CustomLogoutView(LogoutView):
         return next_page
 
 
-class CustomLoginView(BSModalLoginView):
+class CustomLoginView(SuccessMessageMixin, LoginView):
     authentication_form = CustomAuthenticationForm
     template_name = 'users/signin.html'
     success_message = 'Success: You were successfully logged in.'

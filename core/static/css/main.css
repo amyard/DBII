@@ -105,7 +105,7 @@
     margin-top: 2%;
 }
 
-.reg-form {
+.reg-form, .reg-form-in {
     border: 1px solid blue;
     width: 60%;
     margin-left: 20%;
@@ -114,7 +114,15 @@
     box-shadow: 0px 0px 7px grey;
 }
 
+.reg-form-in {
+    width: 30%;
+    margin-left: 35%;
+}
+
+.reg-form-in input { width: 100%; }
+
 .help-inline { color: #c82333; }
+.help-block { color: red; }
 
 
 /*   CONFIRM EMAIL SIGN UP  */
