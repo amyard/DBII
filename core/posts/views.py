@@ -26,7 +26,7 @@ class PostListView(ListView):
 
         # Filter posts system
         filter_value = self.request.GET.get('position')
-        if filter_value:
+        if filter_value in ['2', '3', '4', '5']:
             if filter_value == '2':
                 uniq_ids = Post.objects.values('id').annotate(count=Count('comments')).order_by('-count').values_list('id', flat=True)
             elif filter_value == '3':
@@ -35,10 +35,8 @@ class PostListView(ListView):
                 uniq_ids = Post.objects.values('id').annotate(count=Count('likes')).order_by('-count').values_list('id',flat=True)
             elif filter_value == '5':
                 uniq_ids = Post.objects.values('id').annotate(count=Count('comments')).order_by('count').values_list('id', flat=True)
-
             preserved = Case(*[When(pk=pk, then=pos) for pos, pk in enumerate(uniq_ids)])
             qs = Post.objects.filter(id__in=uniq_ids).order_by(preserved)
-
         return qs
 
 
@@ -178,3 +176,24 @@ class LikeToggleView(View):
             'button': button
         }
         return JsonResponse(data)
+
+
+class SearchView(ListView):
+    template_name = 'posts/main.html'
+    model = Post
+    context_object_name = 'posts'
+    paginate_by = 1
+
+    def get_queryset(self):
+        qs = Post.objects.all()
+        query = self.request.GET.get('q')
+        if query:
+            qs = Post.objects.filter(Q(title__icontains=query)|Q(content__icontains = query))
+        return qs
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(SearchView, self).get_context_data(*args, **kwargs)
+        context['profile'] = self.request.user
+        context['search_cond'] = f"?q={self.request.GET.get('q').replace(' ', '+')}"
+
+        return context
