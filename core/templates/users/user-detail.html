@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load posts_tags %}
+
 
 {% block title %}
     {{ profile.username }} - {{ block.super }}
@@ -36,9 +38,11 @@
         </div>
     </div>
 
-    <div class="sidebar-profile">
-        <!--  TODO - Fill values -->
-        Latest posts added by <b>{{ profile.username }}</b>:
+    <div class="sidebar-profile px-3 py-3">
+        <h4>All Posts by {{ profile.username }}:</h4>
+        {% for post in profile.posts.all %}
+            <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+        {% endfor %}
     </div>
 
 </div>

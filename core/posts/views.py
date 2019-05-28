@@ -71,7 +71,7 @@ class PostDetailView(DetailView):
         context['comments'] = page
 
         # change color of Like/Dislike button
-        context['buttons'] = Like.objects.filter(post=self.get_object(), user=self.request.user)
+        context['buttons'] = Like.objects.filter(post=self.get_object(), user__username=self.request.user.username)
         return context
 
 

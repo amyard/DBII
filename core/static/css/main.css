@@ -72,8 +72,8 @@
     float: left;
 }
 
-.sidebar h4 { text-decoration: underline; }
-.sidebar a {
+.sidebar h4, .sidebar-profile h4 { text-decoration: underline; }
+.sidebar a, .sidebar-profile a {
     text-decoration: underline;
     text-decoration-color: #9FCDFF;
     display: block;

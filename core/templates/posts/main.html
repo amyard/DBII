@@ -104,7 +104,9 @@
 <script>
 <!-- HIDE MESSAGES -->
 $(function () {
-
+    if (window.location.href == "http://127.0.0.1:8000/users/signin/?next=/") {
+       console.log('bla');
+    }
       // Create post button
       $(".create-post").each(function () {
         $('#change-modal').removeClass('modal-dialog');
@@ -118,6 +120,13 @@ $(function () {
     });
 
 });
+</script>
+
+
+
+<script>
+
+
 </script>
 
 {% endblock %}
