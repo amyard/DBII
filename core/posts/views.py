@@ -18,7 +18,7 @@ class PostListView(LoginRequiredMixin, ListView):
     template_name='posts/main.html'
     model = Post
     context_object_name='posts'
-    paginate_by=9
+    paginate_by=6
     form = FilterForm
 
     def get_queryset(self, *args, **kwargs):

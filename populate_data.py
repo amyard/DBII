@@ -79,9 +79,9 @@ def main():
     users = ['TestUser', 'NewUser', 'delme', 'ItsMe', 'Awesome']
 
     create_users(users)
-    create_post(50)
-    create_comments(150)
-    create_likes(75)
+    create_post(30)
+    create_comments(100)
+    create_likes(50)
 
 
 if __name__ == '__main__':

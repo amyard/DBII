@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/core'
 
 ROOT_DIR = environ.Path(__file__) - 2
 env = environ.Env(
-    DJANGO_DEBUG=(bool, True),
+    DJANGO_DEBUG=(bool, False),
     DJANGO_SECRET_KEY=(str, '1uiwfdz1z!5qd2c2r+ild6#4xm&#h04h0t+hx34&wp%e8n$feu'),
     DJANGO_DATABASE_URL=(str, 'sqlite:///db.sqlite3'),
     EMAIL_HOST_USER = (str, 'delmetest2019@gmail.com'),
@@ -144,8 +144,8 @@ USE_L10N = True
 USE_TZ = True
 
 
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
