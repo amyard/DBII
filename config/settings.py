@@ -21,16 +21,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/core'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# env = environ.Env(
-#     DJANGO_DEBUG=(bool, False),
-#     DJANGO_SECRET_KEY=(str, 'bfbe(htj6+ggs2(tv-u6ut1!^)h%@2rerv4uy$$vu2@dp98%a*'),
-# )
 
 ROOT_DIR = environ.Path(__file__) - 2
 env = environ.Env(
-    DEBUG=(bool, True),
+    DJANGO_DEBUG=(bool, True),
     DJANGO_SECRET_KEY=(str, '1uiwfdz1z!5qd2c2r+ild6#4xm&#h04h0t+hx34&wp%e8n$feu'),
-    DJANGO_ALLOWED_HOSTS=(list, []),
     DJANGO_DATABASE_URL=(str, ''),
     EMAIL_HOST_USER = (str, 'delmetest2019@gmail.com'),
     EMAIL_HOST_PASSWORD = (str, 'za12za34'),
@@ -41,7 +36,7 @@ environ.Env.read_env(env_file=os.path.join(str(ROOT_DIR), '.env'))
 
 DEBUG = env.bool("DJANGO_DEBUG")
 SECRET_KEY = env('DJANGO_SECRET_KEY')
-ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS')
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'db2-testtask.herokuapp.com']
 
 DATABASES = {
     'default': env.db('DJANGO_DATABASE_URL')
@@ -93,6 +88,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -149,15 +145,19 @@ USE_L10N = True
 USE_TZ = True
 
 
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'staticfiles'),
 )
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -168,6 +168,13 @@ CRISPY_TEMPLATES_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'posts:base_view'
 LOGOUT_REDIRECT_URL = 'posts:base_view'
 LOGIN_URL = 'users:signin'
+
+
+
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
+
 
 
 TINYMCE_DEFAULT_CONFIG = {
