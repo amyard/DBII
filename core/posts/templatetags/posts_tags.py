@@ -19,3 +19,9 @@ def most_commented_posts(count=5):
     preserved = Case(*[When(pk=pk, then=pos) for pos, pk in enumerate(uniq_ids)])
     res = Post.objects.filter(id__in=uniq_ids).order_by(preserved)
     return res
+
+
+@register.simple_tag
+def newest_posts(count=12):
+    res = Post.objects.all()[:count]
+    return res

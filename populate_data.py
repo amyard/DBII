@@ -78,7 +78,7 @@ def create_likes(N):
 def main():
     users = ['TestUser', 'NewUser', 'delme', 'ItsMe', 'Awesome']
 
-    # create_users(users)
+    create_users(users)
     create_post(50)
     create_comments(150)
     create_likes(75)

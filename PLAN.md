@@ -29,7 +29,7 @@
 28. ~~settings.py with environ~~
 29. Heroku
 30. READ ME - detail with all tasks and some description
-31. Detail View: add Popular posts with carousel by 3 items
+31. ~~Detail View: add Popular posts with carousel by 3 items~~
 
 ### Aditional TODO
 1.  Login via Social Network
