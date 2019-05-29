@@ -26,10 +26,9 @@ ROOT_DIR = environ.Path(__file__) - 2
 env = environ.Env(
     DJANGO_DEBUG=(bool, True),
     DJANGO_SECRET_KEY=(str, '1uiwfdz1z!5qd2c2r+ild6#4xm&#h04h0t+hx34&wp%e8n$feu'),
-    DJANGO_DATABASE_URL=(str, ''),
+    DJANGO_DATABASE_URL=(str, 'sqlite:///db.sqlite3'),
     EMAIL_HOST_USER = (str, 'delmetest2019@gmail.com'),
     EMAIL_HOST_PASSWORD = (str, 'za12za34'),
-
 )
 environ.Env.read_env(env_file=os.path.join(str(ROOT_DIR), '.env'))
 
@@ -82,13 +81,13 @@ INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -146,7 +145,7 @@ USE_TZ = True
 
 
 
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
@@ -159,8 +158,9 @@ STATICFILES_DIRS = (
 )
 
 
-MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 
 CRISPY_TEMPLATES_PACK = 'bootstrap4'
 

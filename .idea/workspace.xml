@@ -2,8 +2,907 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ce2040-d019-40ae-9664-4dada376e5c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAN.md" beforeDir="false" afterPath="$PROJECT_DIR$/PLAN.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/posts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/autocomplete.781713f30664.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/autocomplete.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/base.4e3bba263270.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/base.7ea12481fb59.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/changelists.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/changelists.f6dc691f8d62.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/dashboard.7ac78187c567.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/fonts.494e4ec545c9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/fonts.cc6140298ba7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/forms.4d944dc1c5f9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/forms.a895c775b4d9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/login.a846c0e2ef65.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/responsive.d1e3572cb104.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/responsive_rtl.2a6652327ccd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/responsive_rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/rtl.306dbf6d5df6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/vendor/select2/LICENSE-SELECT2.7cf1de939f3b.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/vendor/select2/LICENSE-SELECT2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/vendor/select2/select2.3805311d5fc1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/vendor/select2/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/vendor/select2/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/vendor/select2/select2.min.d44571114a90.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/widgets.5e372b41c483.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/widgets.a7251c097987.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/css/widgets.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/fonts/LICENSE.d273d63619c9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/fonts/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/fonts/README.2c3d0bcdede2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/fonts/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/fonts/Roboto-Bold-webfont.2ad99072841e.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/fonts/Roboto-Bold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/fonts/Roboto-Light-webfont.b446c2399bb6.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/fonts/Roboto-Light-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/fonts/Roboto-Regular-webfont.ec39515ae8c6.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/fonts/Roboto-Regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/LICENSE.2c54f4e1ca1c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/README.a70711a38d87.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/calendar-icons.39b290681a8b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/calendar-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/gis/move_vertex_off.7a23bf31ef8a.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/gis/move_vertex_off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/gis/move_vertex_on.0047eba25b67.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/gis/move_vertex_on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-addlink.d519b3bab011.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-addlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-alert.034cc7d8a67f.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-alert.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-calendar.ac7aea671bea.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-changelink.18d2fd706348.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-changelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-clock.e1d4dfac3f2b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-deletelink.564ef9dc3854.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-deletelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-no.439e821418cd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-no.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-unknown-alt.81536e128bb6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-unknown-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-unknown.a18cb4398978.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-unknown.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-viewlink.41eb31f7826e.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-viewlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-yes.d2f9f035226a.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/icon-yes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/inline-delete.fec1b761f254.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/inline-delete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/search.7cf54ff789c6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/selector-icons.b4555096cea2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/selector-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/sorting-icons.3a097b59f104.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/sorting-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/tooltag-add.e59d620a9742.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/tooltag-add.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/tooltag-arrowright.bbfb788a849e.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/img/tooltag-arrowright.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/SelectBox.b49f008d186b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/SelectBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/SelectFilter2.bf63c55b78f6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/SelectFilter2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/actions.2fb8e8349c22.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/actions.min.5fa8cb0403f1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/actions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/admin/DateTimeShortcuts.e3407a6ea666.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/admin/RelatedObjectLookups.ea0683bea064.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/autocomplete.cfd2c4dc8981.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/autocomplete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/calendar.aae57adab5f6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/cancel.d6b4b556c3aa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/cancel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/change_form.9e85003a1a38.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/change_form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/collapse.acba97a53595.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/collapse.min.2ee8a0086864.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/collapse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/core.9c3bce7d1006.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/inlines.3b3fb199b064.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/inlines.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/inlines.min.4d23f8660b21.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/inlines.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/jquery.init.95b62fa19378.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/jquery.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/popup_response.6ce3197f8fc8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/popup_response.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/prepopulate.2f90da7170ec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/prepopulate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/prepopulate.min.85fd5e0fb706.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/prepopulate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/prepopulate_init.0d3b53c37074.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/prepopulate_init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/timeparse.51258861a46a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/timeparse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/urlify.4087f3e18796.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/urlify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/jquery/LICENSE.a158210a2737.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/jquery/jquery.6a07da9fae93.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/jquery/jquery.min.a09e13ee94d5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/LICENSE.7cf1de939f3b.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ar.a8bb27ec698c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/az.498dc667b34e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/bg.89cba4df3c86.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ca.2eaad4eb1950.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/cs.a68bcd293adc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/da.cbf897a0ae53.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/de.366d0aacb55f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/el.5629ce65500f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/en.05649b26c086.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/es.dc9dbf9d65df.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/et.c3953fb90b6b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/eu.11b925456433.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/fa.98e52839b583.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/fi.659847deefdc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/fr.b06a3340de45.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/gl.78a87f7c0a51.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/he.222d90ee0344.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/hi.116a90b7111b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/hr.e1d2c70b4df5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/hu.db45641f10b2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/id.6ee6c9c64b94.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/is.808c7d47acb5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/it.bae1661dbb77.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ja.19cf1ce8a03d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/km.6074a9c5575c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ko.74b17541834f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/lt.a0783b1bd159.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/lv.07fe2a580d17.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/mk.4986d7fc3ff3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ms.23e7b4369579.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/nb.137e184004aa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/nl.c363ace8aa05.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/pl.76465b54a6b0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/pt-BR.9efbbac4fda8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/pt.5d6ccc53b347.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ro.1ddc2b9980dc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ru.d83609abf2e0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/sk.a0f1a818d092.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/sr-Cyrl.2f3047aad49e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/sr.157bc6eb978e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/sv.2b21bb3f6110.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/th.2a4ece4c4355.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/tr.c1925d8817db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/uk.3d56f311192d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/vi.3520aa7bdea8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/zh-CN.419002d3c6c1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/zh-TW.c021537edf2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/i18n/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/select2.full.a95323cb4760.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/select2.full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/select2.full.min.da607360bcc6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/select2/select2.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/xregexp/LICENSE.d64cecf4f157.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/xregexp/xregexp.1865b1cf5085.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/xregexp/xregexp.min.c95393b8ca4d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/css/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/css/owl.theme.default.min.594b81805a98.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/css/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/bootstrap.min.79050434eaba.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/jquery-3.2.1.min.c9f5aeeca3ad.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/jquery.bootstrap.modal.forms.0d146086ae00.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/jquery.bootstrap.modal.forms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/jquery.bootstrap.modal.forms.min.af3a09761564.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/jquery.bootstrap.modal.forms.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/owl.carousel.ccdf893e7d8b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/popper.min.6b08ddc90100.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/css/prism.1b35e2bdd116.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/css/prism.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/prism.df39d18e456b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/prism.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/jquery.tinymce.min.9a60dbfe8bb1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/jquery.tinymce.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/af_ZA.7d6fd91e8b6b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/af_ZA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ar.3ae01c6fdafd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ar_SA.1090923466a3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ar_SA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/az.beb35ace16e3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/be.d4e598cd3a96.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/be.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/bg_BG.93dfed4b5e1d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/bg_BG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/bn_BD.48fa96a25356.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/bn_BD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/bs.c95ee13254d8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ca.483d0e555cd1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/cs.bd16054b4d6e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/cs_CZ.eb30f9b79e14.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/cs_CZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/cy.5470471e6d7c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/da.16e670237098.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/de.f920bb15789f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/de_AT.40bd35d08870.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/de_AT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/dv.786dc9a6dc21.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/dv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/el.5416576d60c4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/en_CA.5bd4210a5bc7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/en_CA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/en_GB.0dfa25d30952.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/en_GB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/eo.957851defb7f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/es.4c4fb04c8318.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/es_MX.7a7cd6766a3b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/es_MX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/et.d6ea3fa1e525.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/eu.a2967b27e31c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/fa.61b7106422b7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/fa_IR.a17ff19a01b6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/fa_IR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/fi.23748eb5ea5b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/fo.9806e6f77eca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/fr_CH.381bab1a4ee4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/fr_CH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/fr_FR.bbe7065481a5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/fr_FR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ga.20e9eff86acf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/gd.cf5f46b546b7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/gd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/gl.0023011602c1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/he_IL.16569bdc8a3c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/he_IL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/hi_IN.db4969bf2bc0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/hi_IN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/hr.980126bb2299.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/hu_HU.35e6962273a0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/hu_HU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/hy.2a85b5d23859.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/hy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/id.4d2a195f5659.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/is_IS.51c2c22110fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/is_IS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/it.ad94580b2d95.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ja.6d28ff0d48b5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ka_GE.da2bc7bb054c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ka_GE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/kab.5103bcc9a2ff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/kab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/kk.25260b26eeb9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/kk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/km_KH.cd6913ccbb39.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/km_KH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ko.ec677703167a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ko_KR.2bfb2fa60df1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ko_KR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ku.8cbabaaff7ba.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ku_IQ.6af901fe6cc9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ku_IQ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/lb.f8a8e2bffa70.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/lb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/lt.6c73f8572672.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/lv.977fcf5fa673.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/mk_MK.17f7b3d5a072.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/mk_MK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ml.45e75b848654.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ml_IN.8723ce2f5a6f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ml_IN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/mn_MN.90ff2a1ba666.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/mn_MN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/nb_NO.81b389231df9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/nb_NO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/nl.c1f7b977b781.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/oc.37f5a3373542.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/oc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/pl.b1f0a3da29c3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/pt_BR.29b97e0fb14c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/pt_BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/pt_PT.c6d120959a91.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/pt_PT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/readme.a803b8446c1c.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ro.d9f83500e652.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ru.e1877deb640b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ru_RU.49191fc3c368.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ru_RU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/si_LK.893cc57b6a5a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/si_LK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/sk.9a57f8e9a274.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/sl_SI.3fd93508b8dc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/sl_SI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/sr.e0debf8df7de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/sv_SE.209d87dc2b2a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/sv_SE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ta.5cb088b71202.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ta_IN.543188fcd1e0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ta_IN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/tg.433e45a70785.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/tg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/th_TH.4f6e119d7a00.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/th_TH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/tr.2c1d2cf439bd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/tr_TR.464f9e4e8141.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/tr_TR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/tt.22d516f05b91.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/tt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ug.07791b2f285d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/uk.1590d32b9a85.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/uk_UA.f20eaea6d6e7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/uk_UA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/uz.734b3a8893d2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/uz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/vi.bbb2bf81fb2e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/vi_VN.1b073fe1bd03.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/vi_VN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/zh_CN.GB2312.df2e8073e712.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/zh_CN.GB2312.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/zh_CN.e304ad027ace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/zh_TW.77e41bfdeda3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/langs/zh_TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/license.6f9589e0c8df.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/advlist/plugin.min.07f871a08c4e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/advlist/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/anchor/plugin.min.36a2eff9cdc3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/anchor/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/autolink/plugin.min.9ec88f0ade4e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/autolink/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/autoresize/plugin.min.4f9bc063578c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/autoresize/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/autosave/plugin.min.55a21828623a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/autosave/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/bbcode/plugin.min.196e92d0338e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/bbcode/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/charmap/plugin.min.3d42b6ec9f84.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/charmap/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/code/plugin.min.7bf5c282b924.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/code/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/codesample/css/prism.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/codesample/css/prism.df3f7d54eba0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/codesample/plugin.dev.aa9b2e1dc559.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/codesample/plugin.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/codesample/plugin.min.efea41e3ad80.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/codesample/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/colorpicker/plugin.min.cdb6a59abe55.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/colorpicker/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/css/dialog.2bb2970f852d.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/css/dialog.ce38f18f7710.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/css/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/buttons.33b2f2e08cc3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/buttons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/icons.75ad72872bc6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/items.d201498a710f.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/items.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/menu_arrow.e21752451a9d.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/menu_arrow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/menu_check.c7d003885737.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/menu_check.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/progress.50c5e3e79b27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/progress.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/tabs.6473bbcd0a01.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/img/tabs.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/plugin.cd4f57f92c75.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/plugin.min.451c40101c1a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/tiny_mce_popup.4237af4931ba.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/tiny_mce_popup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/utils/editable_selects.a14a93897132.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/utils/editable_selects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/utils/form_utils.bf88fc6ca255.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/utils/form_utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/utils/mctabs.eb81a1ec2259.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/utils/mctabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/utils/validate.434cc20c313f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/compat3x/utils/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/contextmenu/plugin.min.314c0324f441.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/directionality/plugin.min.884572e84844.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/directionality/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-cool.e26e97a318f8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-cool.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-cry.e72bf995ceca.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-cry.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-embarassed.d59171236e6b.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-embarassed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.c12d9db6a14a.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-frown.59930208822f.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-frown.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-innocent.ec0477c8a206.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-innocent.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-kiss.4ae8945f3960.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-kiss.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-laughing.c37f405db4e1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-laughing.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-money-mouth.11c14bd1496a.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-sealed.bb828cb46b37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-sealed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-smile.2968a664098d.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-surprised.2e136ebd637b.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-surprised.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-tongue-out.5ec3bb4781c8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-undecided.3c0c011d16b1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-undecided.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-wink.897275ac7d07.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-wink.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-yell.19bb8ebfe3c2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-yell.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/plugin.min.22b985b12447.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/emoticons/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/example/dialog.4702330a1cfc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/example/dialog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/example/plugin.min.b2d243407d41.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/example/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/example_dependency/plugin.min.8751593f8a00.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/example_dependency/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/fullpage/plugin.min.66c19307a3c6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/fullpage/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/fullscreen/plugin.min.0e31542957a5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/help/img/logo.64ae1cb2051b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/help/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/help/plugin.min.0a58419b50eb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/help/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/hr/plugin.min.0911253e8229.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/hr/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/image/plugin.min.d48ef2101257.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/image/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/imagetools/plugin.min.2f79188988b5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/imagetools/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/importcss/plugin.min.f54c0bfa433b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/importcss/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.9cbdd4c216c0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/layer/plugin.min.3828a4555da9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/layer/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/legacyoutput/plugin.min.77b8b473267e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/legacyoutput/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/link/plugin.min.da71d62b165e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/link/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/lists/plugin.min.5d19da0a2153.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/lists/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/media/moxieplayer.4e59d34efb2d.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/media/moxieplayer.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/media/plugin.min.111e5c52d4d0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/media/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.22788c4dedd0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/noneditable/plugin.min.3337c8dcef9f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/noneditable/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/pagebreak/plugin.min.f557034121c4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/paste/plugin.dev.a41e1afcab05.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/paste/plugin.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/paste/plugin.min.145af6e3a2d9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/paste/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/preview/plugin.min.6798465fb6e0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/preview/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/print/plugin.min.3ce46fc74efb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/print/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/save/plugin.min.11ffce4ab9ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/save/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/searchreplace/plugin.min.9c4da0f4c738.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/spellchecker/plugin.dev.31d4a9ce4eac.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/spellchecker/plugin.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/spellchecker/plugin.min.832ef3cd2d36.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/tabfocus/plugin.min.5ef8706c5067.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/tabfocus/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/table/plugin.dev.d013c3de1e4d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/table/plugin.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/table/plugin.min.7be1f9ebf842.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/table/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/template/plugin.min.f2714c9fe97f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/template/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/textcolor/plugin.min.c4dc76993c68.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/textcolor/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/textpattern/plugin.min.e8f0dbda0f3c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/textpattern/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/toc/plugin.min.c83981aff968.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/toc/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/visualblocks/css/visualblocks.03ea1695db05.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/visualblocks/css/visualblocks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/visualblocks/plugin.min.61cd5d798ca4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/visualchars/plugin.min.79af882c3493.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/visualchars/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/wordcount/plugin.min.62344b80f05c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/plugins/wordcount/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/AbsoluteLayout.88d7cd8801e6.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/AbsoluteLayout.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Animations.ee0e68935631.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Animations.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Arrows.b56a95efcd1f.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Arrows.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Button.fad4f0504225.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Button.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ButtonGroup.226c8d38b79e.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ButtonGroup.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Checkbox.f0a0f5ccdf13.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Checkbox.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ColorBox.6ab3e6bb17a0.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ColorBox.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ColorButton.3cdffd8a47ca.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ColorButton.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ColorPicker.2bdf3a54eb30.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ColorPicker.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ComboBox.8cca50adc9b2.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ComboBox.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Container.c8c0e875bc79.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Container.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Content.Inline.3acf3a57edc0.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Content.Inline.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Content.Objects.9dd732a81044.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Content.Objects.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Content.aca4058eb04d.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Content.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/CropRect.ab7776d7c279.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/CropRect.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/FieldSet.1555e5341d5e.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/FieldSet.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/FitLayout.11b4dbe851c6.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/FitLayout.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/FloatPanel.694e6dfc47e4.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/FloatPanel.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/FlowLayout.359caf9eae14.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/FlowLayout.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Icons.6f960ba184c6.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Icons.Ie7.6a599f8a724e.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Icons.Ie7.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Iframe.d4f2b1c0f09c.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Iframe.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ImagePanel.fbb538229eb7.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ImagePanel.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/InfoBox.d3b95c255c9f.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/InfoBox.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Label.be2bab6d60ee.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Label.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ListBox.d661cfdd5d06.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ListBox.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Menu.4db4f36159e2.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Menu.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/MenuBar.e3a655b59f49.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/MenuBar.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/MenuButton.ba94fada3b5a.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/MenuButton.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/MenuItem.089e0d02914a.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/MenuItem.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Mixins.790f0127997e.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Notification.db3b07e7abd7.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Notification.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Panel.999c2fab86f7.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Panel.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Path.67021ef96690.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Progress.cb103b6b17bc.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Progress.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Radio.e04eb9559a8c.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Radio.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Reset.f3172c63e7a9.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Reset.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ResizeHandle.dd3039e6bac0.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ResizeHandle.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Scrollable.eb9c6dd6de9b.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Scrollable.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/SelectBox.b3a6bfe36373.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/SelectBox.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Sidebar.33758167f4cc.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Sidebar.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Slider.c1fa41a9615b.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Slider.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Spacer.75a5f9690153.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Spacer.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/SplitButton.a8c9d1827068.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/SplitButton.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/StackLayout.8a1fbaf0c3f6.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/StackLayout.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/TabPanel.b2bf8421c410.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/TabPanel.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/TextBox.590a3bc54892.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/TextBox.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Throbber.3828c9030c98.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Throbber.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/TinyMCE.a1ace02b1bfd.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/TinyMCE.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ToolTip.c0518ad20198.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/ToolTip.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Variables.cfd0a4c6d6bf.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Window.3a3ece143dee.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/Window.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/content.inline.min.0de56511864c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/content.inline.min.ab3c008d02ed.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/content.inline.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/content.min.0be8f6d47b7e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/content.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/content.min.e4bf8c44d4d5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/content.mobile.min.0684a64086ad.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/content.mobile.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-mobile.baecf466c40e.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-mobile.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.12d26c285b71.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.28806940c647.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.7e0c88f02dca.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.a2a1f732cc34.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.06189313e1c7.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.50c955d592e8.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.d031f47facf4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.db33e7676b65.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/img/anchor.abd361357180.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/img/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/img/loader.394bafc3cc4d.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/img/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/img/object.f3726450d745.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/img/object.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/img/trans.12bf9e193749.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/img/trans.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.920ba4697038.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.dev.2113454aee4b.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.dev.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.ie7.596a6e510b61.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.ie7.dev.6652d475ed29.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.ie7.dev.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.ie7.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.ie7.min.044311342159.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.ie7.min.ab035d1d6fd8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.ie7.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.min.535a474e0799.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.min.f25e4515e558.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.mobile.min.a537b2feed25.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.mobile.min.b7a6f110d885.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/skins/lightgray/skin.mobile.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/atomic.a2cfc636f241.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/atomic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/bootstrap-atomic.df5eb2e9c291.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/bootstrap-atomic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/bootstrap-browser.b5c8cffacfe3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/bootstrap-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/bootstrap-demo.38a6a40f1843.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/bootstrap-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/bootstrap-prod.fd39539177ba.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/bootstrap-prod.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/browser.634b459ae05b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/demo.3d2995ebf2f5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/prod.2deaa8268f34.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/bolt/prod.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/dent/depend.6f99799dfb61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/config/dent/depend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/scratch/compile/bootstrap.5efb70d37ed3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/scratch/compile/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/scratch/compile/theme.b661ef148a4b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/scratch/compile/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/scratch/inline/theme.19255667b0f3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/scratch/inline/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/scratch/inline/theme.raw.11a18378a9af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/scratch/inline/theme.raw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/demo/css/demo.1948e9429874.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/demo/css/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/demo/html/demo.be62c4b640c2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/demo/html/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/demo/js/tinymce/inlite/Demo.8c11807926ee.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/demo/js/tinymce/inlite/Demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/Theme.eec58ad717d4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/Theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Arr.24574df5e54d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Arr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Bookmark.ea8f5cfa26fe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Bookmark.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Unlink.5f4df17d2585.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Unlink.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Uuid.02a090915400.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Uuid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Actions.5ddc6d7eab52.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Convert.993c1a4e82be.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Convert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/ElementMatcher.8ab08951d409.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/ElementMatcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Layout.035b096fd98a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Matcher.408df5186280.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Matcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Measure.127c3ee689fd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Measure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/PredicateId.eafa62d4f984.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/PredicateId.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/SelectionMatcher.08ee92b38aed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/SelectionMatcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/SkinLoader.43093f8c8e13.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/SkinLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/UrlType.d300d8598dfa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/UrlType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/file/Conversions.be0892527a6b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/file/Conversions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/file/Picker.d458c465be6d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/file/Picker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Buttons.818790667aa7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Forms.06d67358bc4d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Forms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Panel.b95901105ad1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Panel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Toolbar.5a608f6e00f1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Toolbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/atomic/alien/ArrTest.43be1623ba2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/atomic/alien/ArrTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/atomic/alien/UuidTest.cd5780fa5cc6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/atomic/alien/UuidTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/atomic/core/ConvertTest.c04ac7bbb839.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/atomic/core/ConvertTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/atomic/core/MatcherTest.2f6188e6eeec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/atomic/core/MatcherTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/atomic/core/UrlTypeTest.6c731b0da42e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/atomic/core/UrlTypeTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/ThemeTest.bc5385becca8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/ThemeTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/alien/BookmarkTest.77bad4bbf983.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/alien/BookmarkTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/alien/UnlinkTest.020f65bf6c19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/alien/UnlinkTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/core/ActionsTest.68e135f8a400.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/core/ActionsTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/core/ElementMatcher.13b5fa3ef184.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/core/ElementMatcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/core/LayoutTest.bbc726dc50b1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/core/LayoutTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/core/MeasureTest.c9c11584765a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/core/MeasureTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/core/PredicateIdTest.dab8cbe34804.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/core/PredicateIdTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/core/SelectionMatcherTest.75036b4cd617.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/core/SelectionMatcherTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/file/ConversionsTest.14582c505e42.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/file/ConversionsTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/file/SelectionMatcher.08ee92b38aed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/src/test/js/browser/file/SelectionMatcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/theme.min.9cba2d62377b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/inlite/theme.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/mobile/theme.min.e08eb88535f4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/mobile/theme.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/modern/theme.min.af3b295e3eed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/themes/modern/theme.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/tiny_mce_popup.4237af4931ba.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/tiny_mce_popup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/tinymce.gzip.f4f19744c044.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/tinymce.gzip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/tinymce.min.500c07cb726a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/tinymce.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/utils/editable_selects.a14a93897132.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/utils/editable_selects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/utils/form_utils.bf88fc6ca255.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/utils/form_utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/utils/mctabs.eb81a1ec2259.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/utils/mctabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/utils/validate.434cc20c313f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/tinymce/js/tinymce/utils/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,22 +913,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.env">
+        <entry file="file://$PROJECT_DIR$/config/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
+            <state relative-caret-position="210">
+              <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="51" />
+              <folding>
+                <element signature="e#307#316#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/settings.py">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="152" column="20" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="20" />
-              <folding>
-                <element signature="e#307#316#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -112,14 +1011,14 @@
         <option value="$PROJECT_DIR$/core/templates/base.html" />
         <option value="$PROJECT_DIR$/core/posts/templatetags/posts_tags.py" />
         <option value="$PROJECT_DIR$/core/templates/posts/post_detail.html" />
-        <option value="$PROJECT_DIR$/PLAN.md" />
         <option value="$PROJECT_DIR$/../Django-Tests/DB2/README.md" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/config/settings.py" />
         <option value="$PROJECT_DIR$/core/posts/models.py" />
         <option value="$PROJECT_DIR$/populate_data.py" />
         <option value="$PROJECT_DIR$/config/urls.py" />
+        <option value="$PROJECT_DIR$/PLAN.md" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/config/settings.py" />
       </list>
     </option>
   </component>
@@ -145,6 +1044,11 @@
               <item name="DBII" type="b2602c69:ProjectViewProjectNode" />
               <item name="DBII" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DBII" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DBII" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -529,26 +1433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PLAN.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="14">
-            <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -556,22 +1440,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/media/posts_pics/2019-05-29/this-is-new-title-for-post-no-0/this-is-new-title-for-post-no-0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/media/posts_pics/2019-05-29/this-is-new-title-for-post-no-49/this-is-new-title-for-post-no-49.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#630#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/media/posts_pics/2019-05-29/this-is-new-title-for-post-no-0/this-is-new-title-for-post-no-0.jpg" />
+    <entry file="file://$PROJECT_DIR$/core/media/posts_pics/2019-05-29/this-is-new-title-for-post-no-49/this-is-new-title-for-post-no-49.jpg" />
     <entry file="file://$PROJECT_DIR$/populate_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
@@ -589,20 +1459,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/settings.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="152" column="20" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="20" />
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <element signature="e#307#316#0" expanded="true" />
+            <element signature="e#630#662#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PLAN.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="330">
+            <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        <state relative-caret-position="45">
+          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="51" />
+          <folding>
+            <element signature="e#307#316#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
