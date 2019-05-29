@@ -26,9 +26,7 @@
 25. ~~Пользователи: сайдбар - все статтьи пользователя.~~
 26. Populate data 
 27. Тестирование
-28. Проработка недочетов 
-    - Папку медиа не нужно хранить в репозитории
-    - В settings.py в открытом доступе лежат креденшиалсы
+28. ~~settings.py with environ~~
 29. Heroku
 30. READ ME - detail with all tasks and some description
 31. Detail View: add Popular posts with carousel by 3 items

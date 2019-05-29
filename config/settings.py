@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import sys
+import environ
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/core'
@@ -19,13 +21,41 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/core'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '1uiwfdz1z!5qd2c2r+ild6#4xm&#h04h0t+hx34&wp%e8n$feu'
+# env = environ.Env(
+#     DJANGO_DEBUG=(bool, False),
+#     DJANGO_SECRET_KEY=(str, 'bfbe(htj6+ggs2(tv-u6ut1!^)h%@2rerv4uy$$vu2@dp98%a*'),
+# )
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+ROOT_DIR = environ.Path(__file__) - 2
+env = environ.Env(
+    DEBUG=(bool, True),
+    DJANGO_SECRET_KEY=(str, '1uiwfdz1z!5qd2c2r+ild6#4xm&#h04h0t+hx34&wp%e8n$feu'),
+    DJANGO_ALLOWED_HOSTS=(list, []),
+    DJANGO_DATABASE_URL=(str, ''),
+    EMAIL_HOST_USER = (str, 'delmetest2019@gmail.com'),
+    EMAIL_HOST_PASSWORD = (str, 'za12za34'),
 
-ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0']
+)
+environ.Env.read_env(env_file=os.path.join(str(ROOT_DIR), '.env'))
+
+
+DEBUG = env.bool("DJANGO_DEBUG")
+SECRET_KEY = env('DJANGO_SECRET_KEY')
+ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS')
+
+DATABASES = {
+    'default': env.db('DJANGO_DATABASE_URL')
+}
+
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+
+
+
 
 AUTH_USER_MODEL = 'users.User'
 
@@ -86,23 +116,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        # 'NAME': 'db2',
-        # 'USER' : 'delme',
-        # 'PASSWORD' : 'zaza1234',
-        # 'HOST' : '127.0.0.1',
-        # 'PORT' : '5432',
-    }
-}
-
-
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
@@ -156,12 +169,6 @@ LOGIN_REDIRECT_URL = 'posts:base_view'
 LOGOUT_REDIRECT_URL = 'posts:base_view'
 LOGIN_URL = 'users:signin'
 
-
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'delmetest2019@gmail.com'
-EMAIL_HOST_PASSWORD = 'za12za34'
-EMAIL_PORT = 587
 
 TINYMCE_DEFAULT_CONFIG = {
     'height': 360,
