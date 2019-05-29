@@ -10,7 +10,7 @@ from transliterate import translit
 from django.core.files.images import ImageFile
 from django.contrib.auth import get_user_model
 from faker import Faker
-
+import lorem
 
 
 User = get_user_model()
@@ -38,11 +38,12 @@ def create_users(data):
 def create_post(N):
     fake = Faker()
     for i in range(N):
+        numb_text = random.randint(1, 4)
         pic = random.randint(1, 10)
         post = Post.objects.create(
             title=f'This is new title for Post № {i}',
             slug=gen_slug(f'Slug field for Post № {i}'),
-            content = fake.text(),
+            content = lorem.text()*numb_text,
             author = User.objects.order_by("?").first()
         )
         post.image = ImageFile(open(f'{os.getcwd()}/populate_data/{pic}.jpg', 'rb'))
@@ -77,7 +78,7 @@ def create_likes(N):
 def main():
     users = ['TestUser', 'NewUser', 'delme', 'ItsMe', 'Awesome']
 
-    create_users(users)
+    # create_users(users)
     create_post(50)
     create_comments(150)
     create_likes(75)
