@@ -1,4 +1,6 @@
 # DBII
+> login - admin@gmail.com    
+> pass - zaza1234    
 
 ### https://db2-testtask.herokuapp.com/
 
