@@ -18,7 +18,7 @@ class PostListView(LoginRequiredMixin, ListView):
     template_name='posts/main.html'
     model = Post
     context_object_name='posts'
-    paginate_by=2
+    paginate_by=9
     form = FilterForm
 
     def get_queryset(self, *args, **kwargs):
@@ -57,7 +57,7 @@ class PostDetailView(LoginRequiredMixin, DetailView):
     context_object_name = 'post'
     slug_url_kwarg = 'post_slug'
     form = CommentForm
-    paginate_by = 3
+    paginate_by = 5
 
     def get_context_data(self, *args, **kwargs):
         context = super(PostDetailView, self).get_context_data(*args, **kwargs)
@@ -182,7 +182,7 @@ class SearchView(LoginRequiredMixin, ListView):
     template_name = 'posts/main.html'
     model = Post
     context_object_name = 'posts'
-    paginate_by = 1
+    paginate_by = 6
 
     def get_queryset(self):
         qs = Post.objects.all()
