@@ -65,4 +65,4 @@ class Like(TimeStampedModel):
         ordering = ['-id']
 
     def __str__(self):
-        return f'{self.post} from {self.user.username}'
+        return f'{self.post}'
