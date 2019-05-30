@@ -2,7 +2,6 @@
 > login - admin@gmail.com    
 > pass - zaza1234    
 
-### https://db2-testtask.herokuapp.com/
 
 > **Instruction:**
 1. ```git clone https://github.com/amyard/DBII.git```
