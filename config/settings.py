@@ -24,9 +24,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/core'
 
 ROOT_DIR = environ.Path(__file__) - 2
 env = environ.Env(
-    DJANGO_DEBUG=(bool, True),
+    DJANGO_DEBUG=(bool, False),
     DJANGO_SECRET_KEY=(str, '1uiwfdz1z!5qd2c2r+ild6#4xm&#h04h0t+hx34&wp%e8n$feu'),
-    DJANGO_DATABASE_URL=(str, 'sqlite:///db.sqlite3'),
+    # DJANGO_DATABASE_URL=(str, 'sqlite:///db.sqlite3'),
+    DJANGO_DATABASE_URL=(str, 'postgres://delme:zaza1234@localhost:5432/db2'),
     EMAIL_HOST_USER = (str, 'delmetest2019@gmail.com'),
     EMAIL_HOST_PASSWORD = (str, 'za12za34'),
 )
@@ -63,6 +64,7 @@ DJANGO_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'whitenoise.runserver_nostatic',
 ]
 
 LOCAL_APPS = [
@@ -81,7 +83,7 @@ INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -144,7 +146,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 # Static files (CSS, JavaScript, Images)
@@ -158,7 +160,7 @@ STATICFILES_DIRS = (
 )
 
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 

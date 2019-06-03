@@ -15,8 +15,9 @@ def gen_slug(s):
 
 def save_image_path(instance, filename):
     filename = instance.slug + '.jpg'
-    date = instance.created.strftime("%Y-%m-%d %H:%M:%S").split(' ')[0]
-    return f'posts_pics/{instance.slug}/{filename}'
+    # date = instance.created.strftime("%Y-%m-%d %H:%M:%S").split(' ')[0]
+    # return f'posts_pics/{date}/{instance.slug}/{filename}'
+    return f'{filename}'
 
 
 
