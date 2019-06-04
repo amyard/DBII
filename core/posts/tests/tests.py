@@ -143,3 +143,68 @@ class TestListViewFilterByLikeAndComments(TestCase):
         comment = Comment.objects.values_list('post', flat=True).distinct()
         res = Post.objects.exclude(pk__in=comment).count()
         self.assertEqual(res, 2)
+
+
+class TestPostDetailView(TestCase):
+
+    @classmethod
+    def setUpTestData(cls):
+        cls.client = Client()
+
+        cls.post = PostFactory()
+        cls.user = UserFactory(is_active=True)
+        cls.post_slug = cls.post.slug
+        CommentFactory.create_batch(5, post = cls.post)
+        LikeFactory.create_batch(3, post=cls.post)
+
+        cls.url = reverse('posts:post_detail', args = [cls.post_slug])
+
+
+    def test_view_uses_correct_template(self):
+        self.client.force_login(self.user)
+        response = self.client.get(self.url)
+        self.assertEquals(response.status_code, 200)
+        assert 'base.html' in [t.name for t in response.templates]
+        assert 'posts/post_detail.html' in [t.name for t in response.templates]
+
+    def test_detail_view_name(self):
+        self.assertEqual(resolve(f'/post-detail/{self.post_slug}').func.__name__, views.PostDetailView.__name__)
+
+    def test_correct_slug(self):
+        name = self.post.title
+        self.assertEqual(self.post.slug, '-'.join(name.split(' ')))
+
+    def test_current_comments(self):
+        self.assertEqual(self.post.comments.count(), 5)
+
+    def test_current_likes(self):
+        self.assertEqual(self.post.likes.count(), 3)
+
+
+
+class LikeToggleTestCase(TestCase):
+
+    @classmethod
+    def setUpTestData(cls):
+        cls.client = Client()
+        cls.post = PostFactory()
+        cls.user = UserFactory(is_active=True)
+        cls.url = reverse('posts:like_toggle')
+
+
+    def test_user_like_post(self):
+        like = LikeFactory(post=self.post, user = self.user)
+        model = Like.objects.get(post=self.post)
+        self.assertEqual(model.user, like.user)
+        self.assertEqual(Like.objects.all().count(), 1)
+
+
+    def test_user_dislike_product(self):
+        like = LikeFactory(post=self.post, user=self.user)
+        self.client.force_login(self.user)
+        response = self.client.get(reverse('posts:base_view'))
+        curr_user = response.wsgi_request.user
+
+        if like.user == curr_user:
+            Like.objects.filter(user=self.user, post=self.post).delete()
+        self.assertEqual(Like.objects.all().count(), 0)
