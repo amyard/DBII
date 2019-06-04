@@ -73,6 +73,12 @@ class UsersTestCase(TestCase):
         response = self.client.get(self.logout)
         self.assertEqual(response.status_code, 302)
 
+    def test_login_user(self):
+        self.client.force_login(self.user)
+        response = self.client.get('/')
+        curr_user = response.wsgi_request.user
+        self.assertEqual(curr_user, self.user)
+
 
 
 
