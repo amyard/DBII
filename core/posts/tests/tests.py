@@ -96,3 +96,50 @@ class PostListView(TestCase):
         self.assertEqual(13, p.start_index())
         self.assertEqual(15, p.end_index())
 
+
+
+class TestListViewFilterByLikeAndComments(TestCase):
+
+    @classmethod
+    def setUp(cls):
+        cls.client = Client()
+        cls.user = UserFactory(is_active=True)
+        cls.url = reverse('posts:base_view')
+
+        cls.pr1 = PostFactory()
+        LikeFactory.create_batch(2, post = cls.pr1)
+        CommentFactory.create_batch(2, post=cls.pr1)
+
+        cls.pr2 = PostFactory()
+        LikeFactory.create_batch(2, post=cls.pr2)
+        CommentFactory.create_batch(2, post=cls.pr2)
+
+        cls.pr3 = PostFactory()
+        LikeFactory.create_batch(2, post=cls.pr3)
+
+        cls.pr4 = PostFactory()
+        CommentFactory.create_batch(2, post=cls.pr4)
+
+        cls.pr5 = PostFactory()
+
+    def test_filter_posts_by_existed_likes(self):
+        response = self.client.get(self.url)
+        likes = Like.objects.values_list('post__title', flat=True).distinct().count()
+        self.assertEqual(likes, 3)
+
+    def test_filter_post_without_likes(self):
+        response = self.client.get(self.url)
+        likes = Like.objects.values_list('post', flat=True).distinct()
+        res = Post.objects.exclude(pk__in=likes).count()
+        self.assertEqual(res, 2)
+
+    def test_filter_post_by_existed_comment(self):
+        response = self.client.get(self.url)
+        res = Comment.objects.values_list('post__title', flat=True).distinct().count()
+        self.assertEqual(res, 3)
+
+    def test_filter_post_without_comment(self):
+        response = self.client.get(self.url)
+        comment = Comment.objects.values_list('post', flat=True).distinct()
+        res = Post.objects.exclude(pk__in=comment).count()
+        self.assertEqual(res, 2)
