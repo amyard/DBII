@@ -6,6 +6,7 @@ from django.urls import reverse
 import datetime
 
 from core.users.tests.factories import UserFactory
+from core.users.forms import CustomAuthenticationForm, CustomUserCreationForm
 
 
 User = get_user_model()
@@ -71,3 +72,74 @@ class UsersTestCase(TestCase):
         self.client.force_login(self.user)
         response = self.client.get(self.logout)
         self.assertEqual(response.status_code, 302)
+
+
+
+
+class UserCreationFormTestCase(TestCase):
+
+    def setUp(self):
+        self.user = UserFactory(username='testing', email='testing@gmail.com')
+        self.form = CustomUserCreationForm
+
+    def test_form_is_valid_full_info(self):
+        form = self.form(data = {'username':'test', 'email':'test@test.com', 'password1':'123123123', 'password2':'123123123'})
+        self.assertTrue(form.is_valid())
+
+    def test_form_is_invalid_no_username(self):
+        form = self.form(data = {'email':'test@test.com', 'password1':'123123123', 'password2':'123123123'})
+        self.assertFalse(form.is_valid())
+        self.assertEquals(len(form.errors), 1)
+        self.assertEquals(form.errors['username'][0], 'This field is required.')
+
+    def test_form_invalid_username(self):
+        form = self.form(data = {'email':'test@test.com', 'password1':'123123123', 'password2':'123123123', 'username':'testing'})
+        self.assertFalse(form.is_valid())
+        self.assertEquals(len(form.errors), 1)
+        self.assertEquals(form.errors['username'][0], 'User with this name already exist.')
+
+    def test_form_differend_passwords(self):
+        form = self.form(data={'email': 'test@test.com', 'password1': '123123123', 'password2': '12121212', 'username': 'test'})
+        self.assertFalse(form.is_valid())
+        self.assertEquals(len(form.errors), 1)
+        self.assertEquals(form.errors['password2'][0], 'Your passwords don\'t match.')
+
+    def test_form_invalid_email(self):
+        form = self.form(data = {'email':'testing@gmail.com', 'password1':'123123123', 'password2':'123123123', 'username':'test'})
+        self.assertFalse(form.is_valid())
+        self.assertEquals(len(form.errors), 1)
+        self.assertEquals(form.errors['email'][0], 'User with email testing@gmail.com already exists.')
+
+    def test_form_invalid_email_forget_sign(self):
+        form = self.form(data = {'email':'testing#test.com', 'password1':'123123123', 'password2':'123123123', 'username':'test'})
+        self.assertFalse(form.is_valid())
+        self.assertEquals(len(form.errors), 1)
+        self.assertEquals(form.errors['email'][0], 'Missed the @ symbol in the email address.')
+
+    def test_form_invalid_email_forget_dot(self):
+        form = self.form(data = {'email':'testing@test,com', 'password1':'123123123', 'password2':'123123123', 'username':'test'})
+        self.assertFalse(form.is_valid())
+        self.assertEquals(len(form.errors), 1)
+        self.assertEquals(form.errors['email'][0], 'Missed the . symbol in the email address.')
+
+
+
+
+class UserAuthenticationFormTestCase(TestCase):
+
+    def setUp(self):
+        self.user = UserFactory(username='testing', email='testing@gmail.com', password=12121212)
+        self.form = CustomAuthenticationForm
+
+    def test_form_invalid_password(self):
+        form = self.form(data={'username': 'testing@gmail.com', 'password':112223344})
+        self.assertFalse(form.is_valid())
+        self.assertEquals(len(form.errors), 1)
+        self.assertEquals(form.errors['password'][0], 'Invalid password.')
+
+    def test_form_invalid_password_both_fields(self):
+        form = self.form(data={'username': 'testing@testing.com', 'password':112223344})
+        self.assertFalse(form.is_valid())
+        self.assertEquals(len(form.errors), 2)
+        self.assertEquals(form.errors['username'][0], 'User with such email doesn\'t exists.')
+        self.assertEquals(form.errors['password'][0], 'Invalid password for this user.')
